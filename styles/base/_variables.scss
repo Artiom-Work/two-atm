@@ -1,0 +1,150 @@
+@use "../healpers" as *;
+/* Global variables */
+:root {
+  --color-accent-50: #fefdfd;
+  --color-accent-200: #f2e5e1;
+  --color-accent-500: #fe4f02;
+  --color-accent-600: #dc4401;
+
+  --color-gray-900: #161312;
+  --color-gray-850: #2b2b31;
+  --color-gray-800: #352f2e;
+  --color-gray-750: #484848;
+  --color-gray-700: #66605f;
+  --color-gray-600: #746e6d;
+  --color-gray-550: #808080;
+  --color-gray-500: #968e8e;
+  --color-gray-450: #a5a5a5;
+  --color-gray-400: #ccc5c5;
+  --color-gray-350: #c8c8c8;
+  --color-gray-300: #e1dcdb;
+  --color-gray-200: #ece4e4;
+  --color-gray-100: #f3eded;
+  --color-gray-90: #dcdcdc;
+  --color-gray-75: #f8efef;
+  --color-gray-50: #fbf8f8;
+
+  --color-grad-1: linear-gradient(
+    180deg,
+    #363130 0%,
+    #363433 25.96%,
+    #352f2e 49.04%,
+    #413d3c 66.66%,
+    #474342 76.95%,
+    #514d4c 86.12%,
+    #524d4c 100%
+  );
+
+  --color-grad-2: linear-gradient(90deg, #44362e75 35.45%, #beb19f12 78.09%);
+
+  --color-grad-3: linear-gradient(
+    180deg,
+    #27211e 0%,
+    #24272c 25.96%,
+    #1a1c1e 49.04%,
+    #19191c 66.66%,
+    #321d17 80.64%,
+    #19171a 89.34%,
+    #111215 100%
+  );
+  --color-grad-4: linear-gradient(
+    180deg,
+    #060606 0%,
+    #040404 25.96%,
+    #050506 49.04%,
+    #060607 66.66%,
+    #060607 76.95%,
+    #070708 86.12%,
+    #0b0b0c 100%
+  );
+  --color-grad-5: linear-gradient(
+    270deg,
+    rgba(55, 50, 49, 0.15) 28%,
+    rgba(55, 50, 49, 0.95) 57.52%
+  );
+  --color-white-opacity-10: #ffffff34;
+  --color-white-opacity-35: #ffffffa8;
+  --color-black-opacity-48: #3332327a;
+  --color-black-opacity-80: #00000033;
+  --color-red: #ba1414;
+  --color-red-opcity-15: #3b060526;
+  --color-red-opcity-40: #3b060566;
+  --color-green: #139128;
+  --color-green-light: #31ba49;
+  --color-blue-extra-dark: #243746;
+  --color-blue: #2c94ea;
+  --color-blue-light: #2cabea;
+  --color-gold: #f8981c;
+  --color-orange: #f97b06;
+  // ================ //
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-black-light: #363535;
+
+  --text-color-light: var(--color-gray-50);
+  --text-color-dark: var(--color-gray-900);
+  --text-color-dark-secondary: var(--color-gray-700);
+  --text-color-medium: var(--color-gray-500);
+
+  --color-accent-extra-light: var(--color-accent-50);
+  --color-accent: var(--color-accent-500);
+
+  --color-error: var(--color-red);
+  --color-success: var(--color-green);
+  --color-rating-star: var(--color-gray-350);
+  --color-rating-star-active: var(--color-gold);
+
+  --color-border-medium: var(--color-gray-700);
+  --color-border: var(--color-gray-500);
+  --color-border-light: var(--color-gray-300);
+  --color-border-extra-light: var(--color-gray-90);
+  --color-border-active: var(--color-accent);
+
+  --border: #{rem(1)} solid var(--color-border);
+  --border-light: #{rem(1)} solid var(--color-border-light);
+  --border-extra-light: #{rem(0.8)} solid var(--color-border-extra-light);
+
+  --border-radius-extra-small: #{rem(4)};
+  --border-radius-small: #{rem(7)};
+  --border-radius: #{rem(10)};
+
+  --font-family: "Open Sans", sans-serif;
+
+  --letter-spacing: 0.01em;
+  --letter-spacing-medium: 0.02em;
+  --letter-spacing-big: 0.04em;
+
+  --container-width: #{rem(1260)};
+  --container-width-big: #{rem(1920)};
+  --container-padding-x: #{rem(20)};
+
+  --section-margin-y: #{fluid(80, 40)};
+  --section-margin-y-static: #{rem(80)};
+  --section-margin-y-medium-static: #{rem(60)};
+  --section-margin-y-to-medium: #{fluid(80, 60)};
+  --section-margin-y-extra-big: #{fluid(130, 80)};
+  --section-margin-y-big: #{fluid(120, 80)};
+  --section-margin-y-extra-big-to-medium: #{fluid(130, 60)};
+  --section-margin-y-big-to-medium: #{fluid(120, 60)};
+  --section-margin-y-big-to-small: #{fluid(120, 40)};
+  --section-margin-y-extra-big-to-small: #{fluid(130, 40)};
+
+  --button-height-small: #{rem(34)};
+  --button-height: #{rem(44)};
+  --button-height-big: #{rem(46)};
+  --auth-portal-button-height: #{rem(36)};
+
+  --transition-duration: 0.3s;
+
+  @include desktop-media {
+    --container-padding-x: 9.375vw;
+  }
+  @include tablet-media {
+    --container-padding-x: #{rem(20)};
+  }
+  @include mobile-media {
+    --container-padding-x: #{rem(10)};
+  }
+}
+/*  ===================================  */
+/*  ===================================  */

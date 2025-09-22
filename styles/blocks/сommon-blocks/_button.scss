@@ -1,0 +1,95 @@
+@use "../../healpers" as *;
+
+/* Styles for buttons */
+.button {
+  --buttonColorBg: var(--color-blue);
+  --buttonColorBgLight: var(--color-blue-light);
+
+  @include flex-center(true);
+  @include fluid-text(16, 13);
+
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  font-weight: 700;
+  color: var(--text-color-light);
+  background-color: var(--buttonColorBg);
+  border: none;
+  border-radius: var(--border-radius);
+  min-height: var(--button-height);
+  padding: rem(9) rem(20);
+  transition-duration: var(--transition-duration) !important;
+  will-change: transform;
+
+  @include hover {
+    filter: brightness(90%);
+  }
+
+  @include active {
+    filter: brightness(90%);
+    scale: 0.97;
+  }
+
+  &--light-bg-color {
+    background-color: var(--buttonColorBgLight);
+  }
+
+  &__icon {
+    &--tg {
+      width: rem(28);
+      height: rem(23);
+      fill: currentColor;
+    }
+  }
+
+  &--entry-tg {
+    display: flex;
+    align-items: center;
+    column-gap: rem(22);
+    min-height: fluid(80, 50);
+    padding-inline: rem(15.5) rem(13.5);
+    font-size: fluid(20, 15);
+    line-height: 1.3;
+    border-radius: var(--border-radius-small);
+    color: var(--color-light);
+    background-color: var(--color-blue-light);
+  }
+
+  &--accent-bg {
+    background-color: var(--color-accent);
+  }
+
+  &--light {
+    font-size: rem(13);
+    line-height: 1.69;
+    background-color: var(--color-light);
+    color: var(--text-color-medium);
+    border: rem(1) solid currentColor;
+
+    &-accent {
+      color: var(--color-accent);
+      background-color: var(--color-light);
+    }
+  }
+
+  &--medium-padding {
+    padding-inline: rem(34.5);
+  }
+}
+@include mobile-media {
+  .button {
+    --buttonColorBg: var(--color-blue-light);
+
+    &--light {
+      min-height: var(--button-height-small);
+      padding: rem(5) rem(11);
+    }
+  }
+}
+@include mobile-medium-media {
+  .button {
+    width: 100%;
+  }
+}
+
+/*  ===================================  */
+/*  ===================================  */

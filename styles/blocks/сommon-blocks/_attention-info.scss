@@ -1,0 +1,50 @@
+@use "../../healpers" as *;
+/* Syles for text-block attention-info */
+.attention-info {
+  @include flex-space-between;
+
+  gap: rem(24);
+  padding: rem(10);
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
+  &__text {
+    color: var(--text-color-dark-secondary);
+    line-height: 1.47;
+
+    &--static-fs {
+      font-size: rem(18);
+    }
+
+    &--small {
+      @include fluid-text(16, 15);
+
+      line-height: 1.36;
+      padding-inline: rem(11);
+    }
+
+    p:not(:last-child) {
+      margin-bottom: rem(17);
+    }
+  }
+}
+@include mobile-media {
+  .attention-info {
+    flex-direction: column;
+
+    &__text {
+      line-height: 1.49;
+
+      &--centred-mobile {
+        text-align: center;
+        line-height: 1.47;
+      }
+    }
+  }
+}
+/* ===================================== */
+/* ===================================== */

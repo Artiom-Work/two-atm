@@ -1,0 +1,67 @@
+@use "../../healpers" as *;
+
+/* Styles for common block section */
+.section {
+  margin-bottom: var(--section-margin-y);
+  &--extra-big-margin {
+    margin-bottom: var(--section-margin-y-extra-big);
+  }
+  &--big-margin {
+    margin-bottom: var(--section-margin-y-big);
+  }
+  &--static-margin {
+    margin-bottom: var(--section-margin-y-static);
+  }
+  &--static-medium-margin {
+    margin-bottom: var(--section-margin-y-medium-static);
+  }
+  &--margin-to-medium {
+    margin-bottom: var(--section-margin-y-to-medium);
+  }
+  &--extra-big-to-medium-margin {
+    margin-bottom: var(--section-margin-y-extra-big-to-medium);
+  }
+  &--big-to-medium-margin {
+    margin-bottom: var(--section-margin-y-big-to-medium);
+  }
+  &--big-to-small-margin {
+    margin-bottom: var(--section-margin-y-big-to-small);
+  }
+  &--extra-big-to-small-margin {
+    margin-bottom: var(--section-margin-y-extra-big-to-small);
+  }
+
+  &__title {
+    margin-block: 0 fluid(50, 20);
+    text-align: center;
+    line-height: 1.2;
+
+    &--static-margin {
+      margin-block: 0 rem(50) !important;
+    }
+  }
+
+  &__subtitle {
+    color: var(--text-color-dark-secondary);
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-inline: auto;
+    margin-block: 0 fluid(50, 20);
+
+    &--tire-fitting-page {
+      max-width: rem(800);
+    }
+  }
+}
+@include tablet-media {
+  .section {
+    &__title {
+      font-size: rem(24);
+      line-height: 1.3;
+      margin-block: 0 rem(20);
+    }
+  }
+}
+/*  ===================================  */
+/*  ===================================  */

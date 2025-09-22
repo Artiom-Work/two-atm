@@ -1,0 +1,123 @@
+@use "../../healpers" as *;
+/* Styles for block-tabs services-tabs. Part of section cost-service. source car-service */
+
+.services-tabs {
+  --serviceTabsButtonBg: var(--color-accent-extra-light);
+  --serviceTabsActiveButtonBg: var(--color-gray-800);
+
+  &__header {
+    display: flex;
+    align-items: center;
+    gap: fluid(24, 10);
+    margin-bottom: rem(30);
+  }
+
+  &__search {
+    max-width: rem(225);
+    width: 100%;
+    min-height: 100%;
+    flex-shrink: 0;
+  }
+
+  &__buttons {
+    display: flex;
+    gap: fluid(24, 10);
+  }
+
+  &__button {
+    @include flex-center(true);
+
+    height: rem(50);
+    font-size: rem(15);
+    font-weight: 700;
+    line-height: 1.1;
+    white-space: nowrap;
+    text-transform: uppercase;
+    text-align: center;
+    padding-inline: rem(20);
+    padding-block: rem(12.5);
+    border: none;
+    outline: var(--border-light);
+    background-color: var(--serviceTabsButtonBg);
+    border-radius: var(--border-radius-small);
+    transition-duration: var(--transition-duration) !important;
+
+    &.is-active {
+      background-color: var(--serviceTabsActiveButtonBg);
+      color: var(--color-light);
+    }
+
+    @include hover {
+      background-color: var(--serviceTabsActiveButtonBg);
+      color: var(--color-light);
+    }
+
+    @include active {
+      scale: 0.98;
+      will-change: transform;
+      filter: brightness(80%);
+    }
+  }
+
+  &__body {
+    max-width: rem(1260);
+    width: 100%;
+  }
+
+  &__content {
+    display: none;
+    flex-shrink: 0;
+    width: 100%;
+
+    &.is-active {
+      display: block;
+    }
+  }
+}
+@include desktop-media {
+  .services-tabs {
+    &__header {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    &__buttons {
+      display: contents;
+    }
+
+    &__search {
+      max-width: unset;
+      grid-column: 1/4;
+    }
+  }
+}
+@include tablet-media {
+  .services-tabs {
+    &__header {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__search {
+      max-width: unset;
+      grid-column: 1/2;
+    }
+  }
+}
+@include mobile-media {
+  .services-tabs {
+    &__header {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__button {
+      height: rem(32);
+      font-size: rem(12);
+      line-height: 1.66;
+      padding-inline: rem(12);
+      padding-block: rem(6);
+    }
+  }
+}
+/* =============================== */
+/* =============================== */

@@ -1,0 +1,147 @@
+@use "../../healpers" as *;
+/* Styles for service-cost-card. Part of cost-service list */
+.service-cost-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: rem(17);
+
+  height: 100%;
+  outline: var(--border-light);
+  border-radius: var(--border-radius-small);
+  padding: rem(30) rem(20);
+
+  &--accent-bg {
+    background-color: var(--color-gray-75);
+  }
+
+  &--big-padding {
+    padding-block: rem(50);
+    gap: rem(10);
+  }
+
+  &--extra-big-padding {
+    padding-block: rem(63);
+    gap: rem(16);
+  }
+
+  &--small-top-padding {
+    justify-content: start;
+    padding: rem(16) rem(20) rem(20);
+    gap: rem(21);
+  }
+
+  &--gap-24 {
+    gap: rem(24);
+  }
+
+  &--gap-20 {
+    gap: rem(20);
+  }
+
+  &--gap-20-to-0 {
+    gap: fluid(20, 0) !important;
+  }
+
+  &--medium-padding {
+    padding-block: rem(20);
+    justify-content: start;
+  }
+
+  &--small-padding {
+    padding: rem(10);
+    align-items: start;
+    gap: rem(17);
+  }
+
+  &__text {
+    line-height: 1.47;
+    text-align: center;
+    color: var(--text-color-dark-secondary);
+
+    &--color-accent {
+      color: var(--color-accent-600);
+    }
+
+    &--left {
+      text-align: start;
+    }
+
+    &--static-fs {
+      font-size: rem(18);
+    }
+
+    &--semi-bold {
+      font-weight: 600;
+      color: var(--text-color-dark);
+    }
+
+    &--width-300 {
+      max-width: rem(300);
+    }
+
+    &-big {
+      @include fluid-text(20, 17);
+
+      font-weight: 700;
+      line-height: 1.3;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-extra-big {
+      font-size: rem(64);
+      font-weight: 700;
+      line-height: 1.1;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &:has(.service-cost-card__asside-tag) {
+      width: 100%;
+      display: flex;
+      gap: rem(20);
+      text-align: start;
+
+      .service-cost-card__asside-tag {
+        min-width: rem(100);
+      }
+    }
+  }
+
+  &:has(.service-cost-card__list) {
+    .service-cost-card__list {
+      line-height: 1.5;
+
+      &--color-light {
+        color: var(--text-color-dark-secondary);
+      }
+
+      &:has(:nth-child(2)) {
+        list-style-type: disc;
+        padding-left: rem(27);
+      }
+    }
+  }
+}
+
+@include mobile-media {
+  .service-cost-card {
+    &__text {
+      &-big {
+        line-height: 1.2;
+      }
+
+      &-extra-big {
+        color: var(--color-accent-600);
+      }
+
+      &:has(.service-cost-card__asside-tag) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  }
+}

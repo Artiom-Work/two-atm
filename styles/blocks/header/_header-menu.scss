@@ -1,0 +1,60 @@
+@use "../../healpers" as *;
+/* BLock header-menu .part of header*/
+
+.header-menu {
+  width: 100%;
+  &--not-to-scroll {
+    /* Временно , заменить на display none , через JS */
+    animation-name: hidden-to-scroll;
+    animation-fill-mode: both;
+    animation-timeline: scroll();
+    animation-range: rem(400) rem(400);
+  }
+  &--color-accent {
+    background-color: var(--color-accent-200);
+  }
+
+  &__list {
+    @include flex-space-between;
+    @include fluid-text(18, 15);
+
+    column-gap: fluid(40, 16);
+    row-gap: rem(17);
+    padding-block: rem(13.5);
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+  }
+}
+@include laptop-media {
+  .header-menu {
+    &__list {
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      margin-inline: auto;
+    }
+  }
+}
+@include tablet-media {
+  .header-menu {
+    &__list {
+      font-size: rem(15);
+      max-width: rem(760);
+    }
+  }
+}
+@include mobile-media {
+  .header-menu {
+    &--not-to-scroll {
+      /* Временно , заменить на display none , через JS */
+      animation-range: rem(50) rem(50);
+    }
+
+    &__list {
+      padding-block: rem(15);
+      padding-inline: rem(10);
+    }
+  }
+}

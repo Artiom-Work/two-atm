@@ -1,0 +1,76 @@
+@use "../../healpers" as *;
+/* Search block. ( form + input + button) .part of block locations */
+
+.search {
+  --searchBlockHeight: #{rem(38)};
+  --searchBlockHeightHigh: #{rem(50)};
+  --searchBgColor: var(--color-light);
+  --searchBgColorHover: var(--color-gray-100);
+  --searchBorder: var(--border-light);
+  --searchIconColor: var(--color-border-medium);
+
+  position: relative;
+  display: block;
+  height: 100%;
+
+  &__input {
+    min-height: var(--searchBlockHeight);
+    height: 100%;
+    width: 100%;
+    padding-inline: rem(10) calc(var(--searchBlockHeight) + rem(20));
+    padding-block: rem(3);
+    border: none;
+    outline: var(--searchBorder);
+    border-radius: var(--border-radius-small);
+    background-color: var(--searchBgColor);
+    transition-duration: var(--transition-duration) !important;
+
+    &--high {
+      min-height: var(--searchBlockHeightHigh);
+    }
+
+    &:focus {
+      background-color: var(--searchBgColor) !important;
+      outline: var(--border);
+    }
+
+    @include hover {
+      background-color: var(--searchBgColorHover);
+    }
+  }
+
+  &__button {
+    @include reset-button;
+    @include flex-center(true);
+
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    border-radius: var(--border-radius-small);
+    min-height: var(--searchBlockHeight);
+    width: var(--searchBlockHeight);
+
+    &--high {
+      min-height: var(--searchBlockHeightHigh);
+    }
+
+    @include hover {
+      filter: opacity(0.6);
+    }
+
+    @include active {
+      filter: opacity(0.3);
+    }
+  }
+
+  &__icon {
+    fill: transparent;
+    stroke: var(--searchIconColor);
+  }
+}
+
+@include mobile-media {
+  .search {
+    --searchBlockHeightHigh: #{rem(42)};
+  }
+}
