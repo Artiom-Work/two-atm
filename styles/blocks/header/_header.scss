@@ -9,10 +9,10 @@
   top: 0;
   z-index: 100;
 
-  animation-name: scrolling-sticky;
-  animation-fill-mode: both;
-  animation-timeline: scroll();
-  animation-range: rem(200) rem(300);
+  // animation-name: scrolling-sticky;
+  // animation-fill-mode: both;
+  // animation-timeline: scroll();
+  // animation-range: rem(200) rem(300);
 
   background-color: var(--color-accent-50);
   &__logo {
@@ -26,18 +26,18 @@
     column-gap: rem(24);
     padding-block: fluid(11, 2) rem(12);
 
-    &--to-scroll {
-      /* Временно , заменить на display none , через JS */
-      position: absolute;
-      translate: 0 rem(-1000);
-      height: rem(1);
-      overflow: hidden;
+    // &--to-scroll {
+    //   /* Временно , заменить на display none , через JS */
+    //   position: absolute;
+    //   translate: 0 rem(-1000);
+    //   height: rem(1);
+    //   overflow: hidden;
 
-      animation-name: visible-to-scroll;
-      animation-fill-mode: both;
-      animation-timeline: scroll();
-      animation-range: rem(400) rem(400);
-    }
+    //   animation-name: visible-to-scroll;
+    //   animation-fill-mode: both;
+    //   animation-timeline: scroll();
+    //   animation-range: rem(400) rem(400);
+    // }
   }
 
   &__buttons {
@@ -49,13 +49,13 @@
 }
 @include tablet-media-above {
   .header {
-    &__general--not-to-scroll {
-      /* Временно , заменить на display block , через JS */
-      animation-name: hidden-to-scroll;
-      animation-fill-mode: both;
-      animation-timeline: scroll();
-      animation-range: rem(400) rem(400);
-    }
+    // &__general--not-to-scroll {
+    //   /* Временно , заменить на display block , через JS */
+    //   animation-name: hidden-to-scroll;
+    //   animation-fill-mode: both;
+    //   animation-timeline: scroll();
+    //   animation-range: rem(400) rem(400);
+    // }
   }
 }
 

@@ -10,10 +10,10 @@
   font-weight: 600;
   font-size: rem(14);
   /* Временно , заменить на display none , через JS */
-  animation-name: hidden-to-scroll;
-  animation-fill-mode: both;
-  animation-timeline: scroll();
-  animation-range: rem(400) rem(400);
+  // animation-name: hidden-to-scroll;
+  // animation-fill-mode: both;
+  // animation-timeline: scroll();
+  // animation-range: rem(400) rem(400);
 
   &__list {
     display: flex;
