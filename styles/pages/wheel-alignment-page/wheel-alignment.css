@@ -977,6 +977,9 @@ button[aria-label]:not(.promotion__card-link)::before {
   font-size: clamp(1.25rem, 0.9011627907rem + 1.3953488372vw, 2rem);
   line-height: 1.5;
 }
+.page-heading__page-name--letter-spacing {
+  letter-spacing: var(--letter-spacing);
+}
 
 @media (width <= 63.99875rem) {
   .page-heading {
@@ -1287,7 +1290,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   background-color: var(--infoGalleryCardBg);
   border: var(--border-light);
   border-radius: var(--border-radius-small);
-  padding-block: 0 clamp(0.3125rem, 0.1671511628rem + 0.5813953488vw, 0.625rem);
+  padding-block: 0 0.625rem;
 }
 .info-gallery__card-image {
   width: 18.5625rem;

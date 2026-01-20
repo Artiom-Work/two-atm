@@ -1,5 +1,5 @@
 {
-  "name": "2ATM",
+  "name": "two-atm",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,16 +8,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Artiom-Work/DAWINCHI.git"
+    "url": "git+https://github.com/Artiom-Work/two-atm.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Artiom-Work/DAWINCHI/issues"
+    "url": "https://github.com/Artiom-Work/two-atm/issues"
   },
-  "homepage": "https://github.com/Artiom-Work/DAWINCHI#readme",
+  "homepage": "https://github.com/Artiom-Work/two-atm#readme",
   "description": "",
   "devDependencies": {
-    "sass": "^1.89.2"
+    "sass": "^1.80.6"
   }
 }
