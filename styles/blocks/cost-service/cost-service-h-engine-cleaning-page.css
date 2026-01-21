@@ -4,7 +4,7 @@
   position: relative;
   max-width: calc(var(--container-width-big) + var(--container-padding-x) * 2);
   margin-inline: auto;
-  padding-block: clamp(1.25rem, -2.3546511628rem + 14.4186046512vw, 9rem) clamp(1.25rem, -1.3953488372rem + 10.5813953488vw, 6.9375rem);
+  padding-block: clamp(1.25rem, -2.3546511628rem + 14.4186046512vw, 9rem) clamp(1.25rem, -1.2209302326rem + 9.8837209302vw, 6.5625rem);
   overflow-x: hidden;
 }
 .cost-service__background {
