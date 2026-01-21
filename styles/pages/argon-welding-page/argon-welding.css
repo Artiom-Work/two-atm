@@ -1400,6 +1400,10 @@ button[aria-label]:not(.promotion__card-link)::before {
   height: 3.75rem;
   flex-shrink: 0;
 }
+.reference__icon--h-icon {
+  width: 8.8125rem !important;
+  height: 10.3125rem !important;
+}
 .reference__text {
   max-width: 52rem;
   font-size: 1.125rem;
@@ -1407,6 +1411,9 @@ button[aria-label]:not(.promotion__card-link)::before {
 }
 .reference__text--semi-bold {
   font-weight: 600;
+}
+.reference__text--medium-lh {
+  line-height: 1.2;
 }
 .reference__text--small-text-mobile {
   font-size: clamp(1rem, 0.9418604651rem + 0.2325581395vw, 1.125rem);
@@ -1418,6 +1425,9 @@ button[aria-label]:not(.promotion__card-link)::before {
 @media (width <= 47.99875rem) {
   .reference--padding-mobile {
     padding-block: 1.25rem;
+  }
+  .reference__text--medium-lh {
+    line-height: 1.37;
   }
   .reference__text p:not(:last-child) {
     margin-bottom: 0;

@@ -9,6 +9,11 @@
     @include square(rem(60));
 
     flex-shrink: 0;
+
+    &--h-icon {
+      width: rem(141) !important;
+      height: rem(165) !important;
+    }
   }
 
   &__text {
@@ -18,6 +23,10 @@
 
     &--semi-bold {
       font-weight: 600;
+    }
+
+    &--medium-lh {
+      line-height: 1.2;
     }
 
     &--small-text-mobile {
@@ -36,6 +45,10 @@
     }
 
     &__text {
+      &--medium-lh {
+        line-height: 1.37;
+      }
+
       p:not(:last-child) {
         margin-bottom: 0;
       }
