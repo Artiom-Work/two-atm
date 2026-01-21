@@ -232,7 +232,7 @@ svg * {
   --color-rating-star-active: var(--color-gold);
   --color-border-medium: var(--color-gray-700);
   --color-border: var(--color-gray-500);
-  --color-border-light: var(--color-gray-300);
+  --color-border-light: var(--color-gray-350);
   --color-border-extra-light: var(--color-gray-90);
   --color-border-active: var(--color-accent);
   --border: 0.0625rem solid var(--color-border);
