@@ -5,7 +5,7 @@
 .info-cards__list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: clamp(0.53125rem, 0.0806686047rem + 1.8023255814vw, 1.5rem);
+  gap: clamp(0.5rem, 0.0348837209rem + 1.8604651163vw, 1.5rem);
 }
 .info-cards__item {
   display: flex;

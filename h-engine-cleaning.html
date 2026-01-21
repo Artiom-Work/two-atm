@@ -353,6 +353,110 @@
 			</ul>
 		</section>
 
+		<section class="cost-service section section--extra-big-margin" aria-labelledby="cost-service-title">
+			<h2 class="visually-hidden" id="cost-service-title">
+				Стоимость водородной очистки двигателя в&nbsp;2АТМ
+			</h2>
+
+			<div class="cost-service__background">
+				<img class="hidden-laptop" src="./images/cost-service/cost-service-h-engine-cleaning-bg.svg" alt="" width="1040"
+					height="694" loading="lazy">
+			</div>
+
+			<div class="container">
+				<h3 class="cost-service__title section__title h3">
+					Стоимость водородной очистки двигателя в&nbsp;санкт-петербурге
+				</h3>
+
+				<div class="cost-service__address">
+					<img src="./images/icons/icon-marker.webp" width="60" height="60" alt="Маркер-метка" loading="lazy">
+
+					<div class="cost-service__address-info">
+						<span>
+							Услуга сверхэффективной водородной мойки двигателя предоставляется
+						</span>
+						<span>
+							в&nbsp;Санкт-Петербурге по&nbsp;адресу: Пулково 19
+						</span>
+						<span>
+							Длительность процедуры: 60&nbsp;минут
+						</span>
+					</div>
+				</div>
+
+				<div class="cost-service__slider swiper">
+					<dl class="swiper-wrapper cost-service__slider-wrapper" role="list"
+						aria-label="Стоймоить очистки двигателя водородом в 2АТМ">
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">до&nbsp;1.5 литров</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;1.6 до&nbsp;2.5&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;2.6 до&nbsp;3.5&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;3.6 до&nbsp;4&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;4.1 до&nbsp;6&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;6.1 до&nbsp;8&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+
+						<div class="swiper-slide cost-service__card" role="listitem" aria-roledescription="слайд">
+							<img class="cost-service__card-icon" src="./images/icons/icon-h-engine.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<dt class="cost-service__card-term">от&nbsp;8.1 до&nbsp;14&nbsp;л</dt>
+							<dd class="cost-service__card-definition h5">6 900 руб</dd>
+						</div>
+					</dl>
+				</div>
+
+				<div class="cost-service__buttons">
+					<a class="cost-service__button button" href="#!">
+						Записаться в&nbsp;Telegram
+					</a>
+
+					<a class="cost-service__button button button--accent-bg" href="#!">
+						Записаться на&nbsp;сайте
+					</a>
+				</div>
+			</div>
+		</section>
+
 		<!-- <section class="reference section container" aria-labelledby="reference-title">
 			<h2 class="visually-hidden" id="reference-title">О защите для лакокрасочных покрытий автомобиля в 2АТМ</h2>
 
@@ -817,6 +921,16 @@
 	<script src="./libs/swiper/swiper-bundle.min.js"></script>
 
 	<script>
+		const costServiceSlider = new Swiper(".cost-service__slider", {
+			slidesPerView: "auto",
+			grabCursor: true,
+			grid: {
+				rows: 1,
+			},
+			spaceBetween: 10,
+
+		});
+
 		const advantagesSlider = new Swiper(".advantages__slider", {
 			slidesPerView: "auto",
 			grabCursor: true,

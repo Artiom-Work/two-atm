@@ -1,0 +1,111 @@
+/* Section cost-service. Styles for page h-engine-cleaning page */
+.cost-service {
+  --costServiceSlidesQuantity: 7;
+  position: relative;
+  max-width: calc(var(--container-width-big) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-block: clamp(1.25rem, -2.3546511628rem + 14.4186046512vw, 9rem) clamp(1.25rem, -1.3953488372rem + 10.5813953488vw, 6.9375rem);
+  overflow-x: hidden;
+}
+.cost-service__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cost-service__title {
+  letter-spacing: var(--letter-spacing);
+}
+.cost-service__address {
+  margin-block: 0 clamp(1.25rem, 0.3779069767rem + 3.488372093vw, 3.125rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+.cost-service__address-info {
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.23;
+}
+.cost-service__slider {
+  margin-block: 0 clamp(1rem, 0.011627907rem + 3.9534883721vw, 3.125rem);
+}
+.cost-service__slider-wrapper {
+  display: grid;
+  grid-template-rows: auto !important;
+  grid-template-columns: repeat(var(--costServiceSlidesQuantity), 10.625rem);
+  column-gap: 0.725rem;
+}
+.cost-service__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: clamp(9.375rem, 8.7936046512rem + 2.3255813953vw, 10.625rem);
+  padding-block: 0.375rem 0.625rem;
+  padding-inline: 0.625rem;
+  background-color: var(--color-light);
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+  text-align: center;
+}
+.cost-service__card-icon {
+  width: 4.375rem;
+  height: 4.375rem;
+  margin-bottom: 0.25rem;
+}
+.cost-service__card-term {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.cost-service__card-definition {
+  line-height: 1;
+}
+.cost-service__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem);
+}
+.cost-service__button {
+  font-size: 1rem;
+}
+
+@media (width <= 47.99875rem) {
+  .cost-service__slider-wrapper {
+    grid-template-columns: repeat(var(--costServiceSlidesQuantity), 9.375rem);
+    column-gap: 0.625rem;
+  }
+  .cost-service__card {
+    padding-block: 0.25rem 0.625rem;
+  }
+}
+@media (width > 35.93625rem) {
+  .cost-service__address {
+    flex-direction: row;
+  }
+  .cost-service__address-info {
+    flex-direction: column;
+  }
+}
+@media (width > 47.99875rem) {
+  .cost-service__address-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (width <= 35.93625rem) {
+  .cost-service__buttons {
+    flex-direction: column;
+    padding-inline: 2.5rem;
+  }
+}
+@media (width <= 30.06125rem) {
+  .cost-service__buttons {
+    padding-inline: 0;
+  }
+}
+/*  =================================================  */
+/*  =====END cost-service(h-engine-cleaning page)====  */
+/*  =================================================  */
+
+/*# sourceMappingURL=cost-service-h-engine-cleaning-page.css.map */
