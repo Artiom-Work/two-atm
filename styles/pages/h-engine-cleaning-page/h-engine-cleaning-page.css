@@ -1309,7 +1309,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   max-width: calc(var(--container-width-big) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-block: clamp(1.25rem, -2.3546511628rem + 14.4186046512vw, 9rem) clamp(1.25rem, -1.2209302326rem + 9.8837209302vw, 6.5625rem);
-  overflow-x: hidden;
+  overflow: hidden;
 }
 .cost-service__background {
   position: absolute;
@@ -1432,6 +1432,73 @@ button[aria-label]:not(.promotion__card-link)::before {
 /* ======================== */
 /*  =====END info-tech====  */
 /* ======================== */
+/* Block-card for advantage slider( advantages__slider--h-engine ).Part of Section advantages. */
+.h-engine-advantage-card {
+  --advantageCardTitleTextColor: var(--color-gray-850);
+  --ourAdvantageCardBgColor: var(--color-accent-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.25rem;
+  max-width: 18.5625rem;
+  width: 100%;
+  padding: 0.875rem 1.25rem 2.8125rem;
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+  background-color: var(--ourAdvantageCardBgColor);
+}
+.h-engine-advantage-card__icon {
+  width: 4.3125rem;
+  height: 4.3125rem;
+}
+.h-engine-advantage-card__heading {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--advantageCardTitleTextColor);
+  min-height: 3.0625rem;
+}
+.h-engine-advantage-card__text {
+  font-size: 1rem;
+  color: var(--color-gray-750);
+  line-height: 1.4;
+}
+
+@media (width <= 47.99875rem) {
+  .h-engine-advantage-card {
+    padding: 1rem 1.25rem 1.25rem;
+    row-gap: unset;
+  }
+  .h-engine-advantage-card__icon {
+    margin-bottom: 1.1875rem;
+  }
+  .h-engine-advantage-card__heading {
+    font-size: 0.9375rem;
+    line-height: 1.2;
+    min-height: unset;
+    margin-bottom: 1.25rem;
+  }
+  .h-engine-advantage-card__text {
+    font-size: 0.9375rem;
+  }
+}
+/* Section advantages.Slider(advantages__slider--h-engine only)..*/
+.h-engine-advantages {
+  --advantagesSlidesQuantity: 4;
+  overflow-x: hidden;
+}
+.h-engine-advantages__slider-wrapper {
+  display: grid;
+  grid-template-rows: auto !important;
+  grid-template-columns: repeat(var(--advantagesSlidesQuantity), 18.5625rem);
+  column-gap: 1.5rem;
+}
+
+/*  ===================================  */
+/*  =======END section advantages======  */
+/*  ===================================  */
 /* Section appointment-choose */
 .appointment-choose__wrapper {
   display: flex;
