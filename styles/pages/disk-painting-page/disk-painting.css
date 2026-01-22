@@ -1548,6 +1548,9 @@ button[aria-label]:not(.promotion__card-link)::before {
 .about-service-list__item:not(:last-child) .about-service-list__icon-wrapper--position-decor::after {
   top: calc(100% + 1.25rem);
 }
+.about-service-list__item:not(:last-child) .about-service-list__icon-wrapper--position-decor-220::after {
+  top: 220%;
+}
 .about-service-list__icon-wrapper {
   width: 2rem;
   height: 2rem;
@@ -1576,9 +1579,22 @@ button[aria-label]:not(.promotion__card-link)::before {
   .about-service-list__item--small-margin-mobile:not(:last-child) {
     margin-bottom: 0.78125rem;
   }
+  .about-service-list__item--small-padding-mobile {
+    padding: 0.625rem;
+  }
+  .about-service-list__item--small-gap-mobile {
+    gap: 0.625rem;
+  }
   .about-service-list__heading--small-text-mobile {
     font-size: 0.75rem;
     line-height: 1.56;
+  }
+  .about-service-list__heading--small-margin-mobile:not(:last-child) {
+    margin-bottom: 0.25rem;
+  }
+  .about-service-list__text--small-text-mobile {
+    font-size: 0.9375rem;
+    line-height: 1.43;
   }
 }
 /* Section about-service.disk-painting page only */
@@ -1597,7 +1613,7 @@ button[aria-label]:not(.promotion__card-link)::before {
 .about-service__image-wrapper {
   position: relative;
   width: 38.625rem;
-  height: 33.625rem;
+  height: 47.625rem;
   flex-shrink: 0;
 }
 .about-service__image-wrapper::before {
@@ -1641,7 +1657,7 @@ button[aria-label]:not(.promotion__card-link)::before {
 @media (width <= 47.99875rem) {
   .about-service__image-wrapper {
     width: 21.25rem;
-    height: 18.6875rem;
+    height: 26.0625rem;
   }
   .about-service__list {
     max-width: unset;
