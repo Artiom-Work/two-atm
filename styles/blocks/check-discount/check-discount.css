@@ -1,0 +1,86 @@
+/* Section check-discount. section with form for checking the loyalty card  */
+.check-discount {
+  max-width: calc(43rem + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+  text-align: center;
+  padding-inline: clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem);
+  padding-block: clamp(1.25rem, 0.3779069767rem + 3.488372093vw, 3.125rem);
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+}
+.check-discount__title {
+  line-height: 1.2;
+  color: var(--color-dark);
+  margin-block: 0 clamp(0.625rem, 0.363372093rem + 1.0465116279vw, 1.1875rem);
+}
+.check-discount__subtitle {
+  line-height: 1.4;
+  color: var(--color-gray-700);
+  font-size: 1rem;
+  max-width: 36.875rem;
+  margin-block: 0 clamp(0.625rem, 0.363372093rem + 1.0465116279vw, 1.1875rem);
+  margin-inline: auto;
+}
+.check-discount__form {
+  max-width: 34.25rem;
+  margin-inline: auto;
+}
+.check-discount__field {
+  margin-block: 0 clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem);
+  min-height: 3.4375rem;
+  padding-block: 0 0.4375rem;
+  width: 100%;
+}
+.check-discount__field-input {
+  width: inherit;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: var(--border-light);
+  padding-block: 0.75rem;
+  text-align: center;
+  color: var(--text-color-dark-secondary);
+  font-weight: 700;
+  padding-inline: 0.625rem;
+  -moz-appearance: textfield;
+  appearance: textfield;
+  transition-duration: var(--transition-duration);
+}
+.check-discount__field-input::placeholder {
+  font-size: clamp(1rem, 0.9418604651rem + 0.2325581395vw, 1.125rem);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--text-color-dark-secondary);
+}
+.check-discount__field-input:focus {
+  border-color: var(--color-dark);
+}
+.check-discount__field-input::-webkit-inner-spin-button, .check-discount__field-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.check-discount__button {
+  padding-inline: 3.40625rem;
+  min-height: 2.625rem;
+}
+
+@media (width <= 47.99875rem) {
+  .check-discount {
+    margin-inline: 0.625rem;
+  }
+  .check-discount__form {
+    max-width: 25rem;
+  }
+  .check-discount__field-input {
+    padding-block: 0.5625rem;
+  }
+}
+/*  ===========================  */
+/*  =====END check-discount====  */
+/*  ===========================  */
+
+/*# sourceMappingURL=check-discount.css.map */

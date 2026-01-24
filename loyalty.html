@@ -222,6 +222,38 @@
 			</div>
 		</section>
 
+		<section class="check-discount section" aria-labelledby="check-discount-title">
+			<h2 class="check-discount__title h4" id="check-discount-title">
+				Проверить размер скидки
+			</h2>
+
+			<div class="check-discount__subtitle">
+				<p>
+					Укажите номер телефона или номер карты лояльности.<br class="hidden-mobile-medium">
+					С&nbsp;2025 года мы&nbsp;перешли на&nbsp;идентификацию по&nbsp;номеру телефона. Новые пластиковые карты или
+					номера карт больше не&nbsp;выдаются.
+				</p>
+			</div>
+
+			<form class="check-discount__form" id="check-discount-form">
+				<div class="check-discount__field">
+					<label class="visually-hidden" for="phone">Телефон клиента</label>
+					<input class="check-discount__field-input" type="tel" id="phone" name="phone" placeholder="Телефон"
+						pattern="[0-9+()\-\s]{10,20}">
+				</div>
+
+				<div class="check-discount__field">
+					<label class="visually-hidden" for="loyalty-card-namber">Номер карты лояльности</label>
+					<input class="check-discount__field-input" type="number" id="loyalty-card-namber" name="loyalty-card-namber"
+						placeholder="Или номер карты лояльности">
+				</div>
+
+				<button class="check-discount__button button button--accent-bg" type="submit">
+					Проверить
+				</button>
+			</form>
+		</section>
+
 		<!-- <section class="reference section container" aria-labelledby="reference-title">
 			<h2 class="visually-hidden" id="reference-title">О хранении шин в 2АТМ</h2>
 
