@@ -968,14 +968,6 @@ button[aria-label]:not(.promotion__card-link)::before {
   font-weight: 400;
   line-height: 1.5;
 }
-.error__nav-list {
-  max-width: 45.6875rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.9375rem 1.25rem;
-  text-transform: uppercase;
-}
 .error__button {
   padding: 0.4375rem 3.3125rem 0.625rem;
   min-height: 2.625rem;
@@ -991,7 +983,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   flex-shrink: 0;
   position: absolute;
   right: -5.5rem;
-  top: -3.625rem;
+  top: -5.625rem;
 }
 
 @media (width <= 100.06125rem) {
@@ -1007,7 +999,7 @@ button[aria-label]:not(.promotion__card-link)::before {
     font-size: clamp(1.5rem, 1.2093023256rem + 1.1627906977vw, 2.125rem);
   }
   .error__image-wrapper {
-    padding-block: 6.25rem 0;
+    padding-block: 3.125rem 0;
     align-self: flex-end;
     position: relative;
     right: unset;
@@ -1021,6 +1013,9 @@ button[aria-label]:not(.promotion__card-link)::before {
   }
 }
 @media (width <= 63.99875rem) {
+  .error__wrapper {
+    max-width: 54.25rem;
+  }
   .error__image-wrapper {
     padding-block: 3.125rem 0;
     width: 12.5rem;
@@ -1033,7 +1028,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   }
   .error__wrapper {
     display: grid;
-    grid-template-areas: "title title" "image image" "subtitle subtitle" "text text" "nav nav" "button button";
+    grid-template-areas: "title title" "image image" "subtitle subtitle" "text text" "button button";
   }
   .error__body {
     display: contents;
@@ -1050,25 +1045,23 @@ button[aria-label]:not(.promotion__card-link)::before {
   .error__text {
     grid-area: text;
   }
-  .error__nav {
-    grid-area: nav;
-  }
-  .error__nav-list {
-    justify-content: center;
-  }
   .error__button {
     grid-area: button;
     justify-self: center;
+    width: unset;
   }
   .error__image-wrapper {
     grid-area: image;
     padding-block: unset;
-    margin-inline: auto;
+    justify-self: center;
+    width: 12.5rem;
+    height: 19.875rem;
   }
 }
-@media (width <= 47.99875rem) {
-  .error__button {
-    width: unset;
+@media (width <= 35.93625rem) {
+  .error__image-wrapper {
+    width: 6.25rem;
+    height: 9.9375rem;
   }
 }
 /*  =======================  */
