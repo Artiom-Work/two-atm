@@ -9,8 +9,8 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon.svg">
-	<!-- <meta name="description"
-		content=""> -->
+	<meta name="description"
+		content="Программа лояльности сети шиномонтажей и автомоек «Две атмосферы» в Санкт-Петербурге. Накопительные скидки, VIP-статус, удобная запись через сайт или мессенджер">
 	<title>2ATM | Программа лояльности</title>
 	<link rel="stylesheet" href="./styles/pages/loyalty-page/loyalty.css">
 </head>
@@ -254,7 +254,8 @@
 			</form>
 		</section>
 
-		<section class="about-loyalty section container" aria-labelledby="about-loyalty-title">
+		<section class="about-loyalty section section--extra-big-to-small-margin container"
+			aria-labelledby="about-loyalty-title">
 			<h2 class="visually-hidden" id="about-loyalty-title">
 				О программе лояльности в 2АТМ
 			</h2>
@@ -330,53 +331,77 @@
 			</ul>
 		</section>
 
-		<!-- <section class="reference section container" aria-labelledby="reference-title">
-			<h2 class="visually-hidden" id="reference-title">О хранении шин в 2АТМ</h2>
+		<section class="join-loyalty section container" aria-labelledby="join-loyalty-title">
+			<h2 class="join-loyalty__title h3" id="join-loyalty-title">
+				Как стать участником программы
+			</h2>
 
-			<img class="reference__icon reference__icon--h-icon hidden-mobile" src="./images/icons/icon-h-drop.webp"
-				width="141" height="165" alt="H в капле" loading="lazy">
+			<ul class="join-loyalty__list">
+				<li class="join-loyalty__card">
+					<img class="join-loyalty__card-image" src="./images/icons/icon-tire-fitting.webp" width="60" height="60"
+						alt="Колесо" loading="lazy">
 
-			<div
-				class="reference__text reference__text--semi-bold reference__text--medium-lh reference__text--small-text-mobile">
+					<h3 class="join-loyalty__card-name h5">
+						Запишитесь на услуги в любую мастерскую сети
+					</h3>
+				</li>
+
+				<li class="join-loyalty__card">
+					<img class="join-loyalty__card-image" src="./images/icons/icon-car-over-hand.webp" width="60" height="60"
+						alt="Машина на руке" loading="lazy">
+
+					<h3 class="join-loyalty__card-name h5">
+						получите услуги и&nbsp;оплатите&nbsp;их
+					</h3>
+				</li>
+
+				<li class="join-loyalty__card">
+					<img class="join-loyalty__card-image" src="./images/icons/icon-technical-inspection.webp" width="60"
+						height="60" alt="Иконка анкеты" loading="lazy">
+
+					<h3 class="join-loyalty__card-name h5">
+						Заполните короткую анкету у&nbsp;администратора
+					</h3>
+				</li>
+			</ul>
+
+			<div class="join-loyalty__text">
 				<p>
-					Водородная очистка (раскоксовка)&nbsp;&mdash;&nbsp;это технология удаления углеродистых отложений
-					(нагара)
-					с&nbsp;элементов двигателя с&nbsp;помощью водородосодержащего газа, который подаётся во&nbsp;впуск при
-					работающем моторе. Такой газ способствует выгоранию отложений в&nbsp;зоне камеры сгорания, на&nbsp;клапанах
-					и&nbsp;в&nbsp;газоходах.
+					Как только сумма оплаченных вами услуг превысит 5000&nbsp;рублей, система автоматически применит скидку
+					к&nbsp;вашим последующим заказам
 				</p>
 			</div>
-		</section> -->
 
-		<!-- <section class="appointment-choose section container" aria-labelledby="appointment-choose-title">
-			<h2 class="visually-hidden">Выбор способа записи в мастерскую 2АТМ</h2>
+			<section class="appointment-choose" aria-labelledby="appointment-choose-title">
+				<h2 class="visually-hidden">Выбор способа записи в программу лояльности в 2АТМ</h2>
 
-			<div class="appointment-choose__wrapper">
-				<div class="appointment-choose__image-wrapper">
-					<img class="appointment-choose__image" src="./images/gifes/car-service-icon-1.gif" width="228" height="285"
-						alt="Иконка сервиса ремонта авто" loading="lazy">
+				<div class="appointment-choose__wrapper">
+					<div class="appointment-choose__image-wrapper">
+						<img class="appointment-choose__image" src="./images/gifes/car-service-icon-1.gif" width="228" height="285"
+							alt="Иконка сервиса ремонта авто" loading="lazy">
+					</div>
+
+					<h3 class="appointment-choose__title" id="appointment-choose-title">
+						Хотите записаться?<br>
+						Выбирайте удобный способ!
+					</h3>
+
+					<div class="appointment-choose__buttons">
+						<a class="appointment-choose__button button" href="#!" target="_blank">
+							В&nbsp;Telegram
+						</a>
+
+						<a class="appointment-choose__button button button--accent-bg" href="#!">
+							На&nbsp;сайте
+						</a>
+					</div>
 				</div>
 
-				<h3 class="appointment-choose__title" id="appointment-choose-title">
-					Хотите записаться?<br>
-					Выбирайте удобный способ!
-				</h3>
+			</section>
+		</section>
 
-				<div class="appointment-choose__buttons">
-					<a class="appointment-choose__button button" href="#!" target="_blank">
-						В&nbsp;Telegram
-					</a>
-
-					<a class="appointment-choose__button button button--accent-bg" href="#!">
-						На&nbsp;сайте
-					</a>
-				</div>
-			</div>
-
-		</section> -->
-
-		<section class="advantages section section--big-to-medium-margin container" aria-labelledby="advantages-title">
-			<h2 class="advantages__title section__title section__title--static-margin h3" id="advantages-title">
+		<section class="advantages section container" aria-labelledby="advantages-title">
+			<h2 class="advantages__title section__title h3" id="advantages-title">
 				Наши преимущества
 			</h2>
 
