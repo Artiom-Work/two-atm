@@ -501,6 +501,16 @@ button[aria-label]:not(.promotion__card-link)::before {
     position: absolute;
   }
 }
+@keyframes show-modal {
+  0% {
+    scale: 0.75;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}
 /*  ===================================  */
 /*  ===================================  */
 /* Styles for buttons */
