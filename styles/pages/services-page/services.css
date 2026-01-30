@@ -260,7 +260,7 @@ svg * {
   --section-margin-y-big-to-small: clamp(2.5rem, 0.1744186047rem + 9.3023255814vw, 7.5rem);
   --section-margin-y-extra-big-to-small: clamp(2.5rem, -0.1162790698rem + 10.4651162791vw, 8.125rem);
   --button-height-small: 2.125rem;
-  --button-height: 2.75rem;
+  --button-height: 2.625rem;
   --button-height-big: 2.875rem;
   --auth-portal-button-height: 2.25rem;
   --transition-duration: 0.3s;
@@ -951,17 +951,18 @@ button[aria-label]:not(.promotion__card-link)::before {
 /* Section page-heading */
 .page-heading {
   --breadcrumbsColor: var(--color-gray-500);
-  --breadcrumbsGap: clamp(3rem, 2.9418604651rem + 0.2325581395vw, 3.125rem);
-  padding-block: 1.5rem 2.9375rem;
+  --breadcrumbsGapX: clamp(1.0625rem, 0.1613372093rem + 3.6046511628vw, 3rem);
+  padding-block: 1.5625rem 1.75rem;
   color: var(--breadcrumbsColor);
 }
 .page-heading__breadcrumbs {
-  margin-bottom: 1.125rem;
+  margin-bottom: 0.625rem;
 }
 .page-heading__breadcrumbs-list {
   display: flex;
   align-items: center;
-  column-gap: var(--breadcrumbsGap);
+  column-gap: var(--breadcrumbsGapX);
+  row-gap: 0.625rem;
 }
 .page-heading__breadcrumbs-item {
   position: relative;
@@ -969,7 +970,7 @@ button[aria-label]:not(.promotion__card-link)::before {
 .page-heading__breadcrumbs-item:not(:last-child)::after {
   position: absolute;
   content: "−";
-  right: calc(var(--breadcrumbsGap) / 2 * -1 - 0.3125rem);
+  right: calc(var(--breadcrumbsGapX) / 2 * -1 - 0.3125rem);
   top: 10%;
 }
 .page-heading__breadcrumbs-item:last-child a {
@@ -977,16 +978,19 @@ button[aria-label]:not(.promotion__card-link)::before {
   pointer-events: none;
 }
 .page-heading__breadcrumbs-link {
-  font-size: clamp(0.9375rem, 0.8502906977rem + 0.3488372093vw, 1.125rem);
+  font-size: 1rem;
   color: currentColor;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 .page-heading__page-name {
   color: var(--color-dark);
+  line-height: 1.1;
 }
 .page-heading__page-name--small-mobile {
   font-size: clamp(1.25rem, 0.9011627907rem + 1.3953488372vw, 2rem);
-  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
 }
 .page-heading__page-name--letter-spacing {
   letter-spacing: var(--letter-spacing);
@@ -994,29 +998,28 @@ button[aria-label]:not(.promotion__card-link)::before {
 
 @media (width <= 63.99875rem) {
   .page-heading {
-    padding-block: 1.25rem 2.5rem;
+    padding-block: 0.625rem;
   }
   .page-heading__breadcrumbs {
-    margin-bottom: 0.625rem;
+    margin-bottom: 0.5rem;
   }
   .page-heading__breadcrumbs-item:not(:last-child)::after {
     top: 5%;
   }
   .page-heading__breadcrumbs-link {
-    line-height: 1.4;
-    letter-spacing: 0.03em;
+    line-height: 1.5;
   }
 }
 @media (width <= 47.99875rem) {
   .page-heading__breadcrumbs-list {
     flex-wrap: wrap;
-    column-gap: var(--breadcrumbsGap);
-    row-gap: 0.9375rem;
+    row-gap: 0;
+  }
+  .page-heading__page-name--small-mobile {
+    text-align: start;
+    line-height: 1.5;
   }
 }
-/*  ===================================  */
-/*  ==========END page-heading=========  */
-/*  ===================================  */
 /* Style for accent red link from common blocks */
 .accent-color-link {
   font-weight: 700;

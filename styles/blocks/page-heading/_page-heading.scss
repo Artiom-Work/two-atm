@@ -2,18 +2,19 @@
 /* Section page-heading */
 .page-heading {
   --breadcrumbsColor: var(--color-gray-500);
-  --breadcrumbsGap: #{fluid(50, 48)};
+  --breadcrumbsGapX: #{fluid(48, 17)};
 
-  padding-block: rem(24) rem(47);
+  padding-block: rem(25) rem(28);
   color: var(--breadcrumbsColor);
 
   &__breadcrumbs {
-    margin-bottom: rem(18);
+    margin-bottom: rem(10);
 
     &-list {
       display: flex;
       align-items: center;
-      column-gap: var(--breadcrumbsGap);
+      column-gap: var(--breadcrumbsGapX);
+      row-gap: rem(10);
     }
 
     &-item {
@@ -23,7 +24,7 @@
         &::after {
           position: absolute;
           content: "−";
-          right: calc((var(--breadcrumbsGap) / 2) * -1 - rem(5));
+          right: calc((var(--breadcrumbsGapX) / 2) * -1 - rem(5));
           top: 10%;
         }
       }
@@ -37,19 +38,22 @@
     }
 
     &-link {
-      font-size: fluid(18, 15);
+      font-size: rem(16);
       color: currentColor;
-      line-height: 1.5;
+      line-height: 1.4;
     }
   }
 
   &__page-name {
     color: var(--color-dark);
+    line-height: 1.1;
 
     &--small-mobile {
       @include fluid-text(32, 20);
 
-      line-height: 1.5;
+      text-transform: uppercase;
+      text-align: center;
+      line-height: 1.2;
     }
 
     &--letter-spacing {
@@ -59,10 +63,10 @@
 }
 @include tablet-media {
   .page-heading {
-    padding-block: rem(20) rem(40);
+    padding-block: rem(10);
 
     &__breadcrumbs {
-      margin-bottom: rem(10);
+      margin-bottom: rem(8);
 
       &-item {
         &:not(:last-child) {
@@ -73,8 +77,7 @@
       }
 
       &-link {
-        line-height: 1.4;
-        letter-spacing: 0.03em;
+        line-height: 1.5;
       }
     }
   }
@@ -84,12 +87,15 @@
     &__breadcrumbs {
       &-list {
         flex-wrap: wrap;
-        column-gap: var(--breadcrumbsGap);
-        row-gap: rem(15);
+        row-gap: 0;
+      }
+    }
+
+    &__page-name {
+      &--small-mobile {
+        text-align: start;
+        line-height: 1.5;
       }
     }
   }
 }
-/*  ===================================  */
-/*  ==========END page-heading=========  */
-/*  ===================================  */

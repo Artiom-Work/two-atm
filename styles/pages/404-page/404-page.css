@@ -260,7 +260,7 @@ svg * {
   --section-margin-y-big-to-small: clamp(2.5rem, 0.1744186047rem + 9.3023255814vw, 7.5rem);
   --section-margin-y-extra-big-to-small: clamp(2.5rem, -0.1162790698rem + 10.4651162791vw, 8.125rem);
   --button-height-small: 2.125rem;
-  --button-height: 2.75rem;
+  --button-height: 2.625rem;
   --button-height-big: 2.875rem;
   --auth-portal-button-height: 2.25rem;
   --transition-duration: 0.3s;
