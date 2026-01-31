@@ -5,7 +5,7 @@
   @include flex-space-between;
 
   gap: rem(20);
-  padding-block: fluid(80, 40);
+  padding-block: fluid(80, 40) 0;
 
   &__desc {
     max-width: rem(600);
@@ -64,6 +64,8 @@
     padding-block: unset;
 
     &__desc {
+      padding-block: rem(40) 0;
+
       &-text {
         p:not(:last-child) {
           margin-bottom: 0;

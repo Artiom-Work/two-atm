@@ -753,7 +753,63 @@
 			</section>
 		</section>
 
-		<!--<section class="svc-location section section--static-margin" aria-labelledby="svc-location-title"></section> -->
+		<section class="svc-location" aria-labelledby="svc-location-title">
+			<h2 class="visually-hidden" id="svc-location-title">Где можно записаться на аппаратную раскоксовку двигателя?</h2>
+
+			<div class="svc-location__inner container">
+				<div class="svc-location__map-block map-block">
+					<img class="map-block__iframe" src="./images/locations/map-svc-location.webp" width="717" height="435"
+						alt="Карта" loading="lazy">
+
+					<svg class="map-block__marker" width="44" height="58" viewBox="0 0 44 58">
+						<use xlink:href="./images/icons/sprite-icons.svg#map-marker"></use>
+					</svg>
+
+					<svg class="map-block__marker map-block__marker--active" width="44" height="58" viewBox="0 0 44 58">
+						<use xlink:href="./images/icons/sprite-icons.svg#map-marker-active"></use>
+					</svg>
+				</div>
+
+				<section class="svc-location__info svc-location-info" aria-labelledby="svc-location-info-title">
+					<h3 class="svc-location-info__title" id="svc-location-info-title">
+						Запишитесь на водородную очистку уже сейчас
+					</h3>
+
+					<ul>
+						<li class="svc-location-info__item">
+							<img class="svc-location-info__icon" src="./images/icons/icon-marker.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<address>
+								<a href="#!">
+									Пулковское шоссе, 19
+								</a>
+							</address>
+						</li>
+
+						<li class="svc-location-info__item">
+							<img class="svc-location-info__icon" src="./images/icons/icon-clock-2.webp" width="60" height="60" alt=""
+								aria-hidden="true" loading="lazy">
+
+							<time>
+								<!--  Если контент тега "Круглосуточно" тогда трибут datetime можно не устанавливать или оставить span вместо time  -->
+								Круглосуточно
+							</time>
+						</li>
+					</ul>
+
+					<div class="svc-location-info__buttons">
+						<a class="svc-location-info__button button button--light-bg-color" href="#!">
+							В&nbsp;Telegram
+						</a>
+
+						<a class="svc-location-info__button button button--accent-bg" href="#!">
+							На&nbsp;сайте
+						</a>
+					</div>
+				</section>
+			</div>
+		</section>
 
 		<section class="about-service section section--extra-big-margin container"
 			aria-labelledby="about-service-outfit-title">

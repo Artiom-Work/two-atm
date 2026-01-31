@@ -71,7 +71,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 1.25rem;
-  padding-block: clamp(2.5rem, 1.3372093023rem + 4.6511627907vw, 5rem);
+  padding-block: clamp(2.5rem, 1.3372093023rem + 4.6511627907vw, 5rem) 0;
 }
 .biz-advant__desc {
   max-width: 37.5rem;
@@ -126,6 +126,9 @@
 @media (width <= 47.99875rem) {
   .biz-advant {
     padding-block: unset;
+  }
+  .biz-advant__desc {
+    padding-block: 2.5rem 0;
   }
   .biz-advant__desc-text p:not(:last-child) {
     margin-bottom: 0;
