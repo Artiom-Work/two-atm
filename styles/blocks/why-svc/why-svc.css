@@ -1,7 +1,10 @@
 /* Section why-svc. decoking-engine page */
 .why-svc {
   --bgGradStarPercent: 37%;
-  background: linear-gradient(90deg, #767676 var(--bgGradStarPercent), #daf0ff var(--bgGradStarPercent), #daf0ff 100%);
+  --whySvcSectionBgColorLight: #daf0ff;
+  --whySvcSectionBgColorDark: #767676;
+  background: linear-gradient(90deg, var(--whySvcSectionBgColorDark) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) 100%);
+  margin-bottom: clamp(1.1875rem, -2.039244186rem + 12.9069767442vw, 8.125rem);
 }
 .why-svc__body {
   display: flex;
@@ -68,7 +71,7 @@
 @media (width <= 63.99875rem) {
   .why-svc {
     --bgGradStarPercent: 30%;
-    background: linear-gradient(180deg, #767676 var(--bgGradStarPercent), #daf0ff var(--bgGradStarPercent), #daf0ff 100%);
+    background: linear-gradient(180deg, var(--whySvcSectionBgColorDark) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) 100%);
     position: relative;
     overflow: hidden;
   }

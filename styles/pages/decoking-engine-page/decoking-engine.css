@@ -218,6 +218,7 @@ svg * {
   --color-blue-light: #2cabea;
   --color-gold: #f8981c;
   --color-orange: #f97b06;
+  --color-extra-light-orange: #ffeee6;
   --color-light: #ffffff;
   --color-dark: #000000;
   --color-black-light: #363535;
@@ -1215,7 +1216,10 @@ button[aria-label]:not(.promotion__card-link)::before {
 /* Section why-svc. decoking-engine page */
 .why-svc {
   --bgGradStarPercent: 37%;
-  background: linear-gradient(90deg, #767676 var(--bgGradStarPercent), #daf0ff var(--bgGradStarPercent), #daf0ff 100%);
+  --whySvcSectionBgColorLight: #daf0ff;
+  --whySvcSectionBgColorDark: #767676;
+  background: linear-gradient(90deg, var(--whySvcSectionBgColorDark) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) 100%);
+  margin-bottom: clamp(1.1875rem, -2.039244186rem + 12.9069767442vw, 8.125rem);
 }
 .why-svc__body {
   display: flex;
@@ -1282,7 +1286,7 @@ button[aria-label]:not(.promotion__card-link)::before {
 @media (width <= 63.99875rem) {
   .why-svc {
     --bgGradStarPercent: 30%;
-    background: linear-gradient(180deg, #767676 var(--bgGradStarPercent), #daf0ff var(--bgGradStarPercent), #daf0ff 100%);
+    background: linear-gradient(180deg, var(--whySvcSectionBgColorDark) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) 100%);
     position: relative;
     overflow: hidden;
   }
@@ -1339,6 +1343,216 @@ button[aria-label]:not(.promotion__card-link)::before {
   }
   .why-svc__item-text {
     line-height: 1.4;
+  }
+}
+/*  step-svc-card. Block slide card */
+.step-svc-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.1875rem;
+  max-width: 67.3125rem;
+  margin-inline: auto;
+}
+.step-svc-card__image {
+  width: inherit;
+  height: inherit;
+}
+.step-svc-card__image-wrapper {
+  width: 37.75rem;
+  height: 25.3125rem;
+  flex-shrink: 0;
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.step-svc-card__content {
+  max-width: 28.125rem;
+  padding: 1.875rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+.step-svc-card__number {
+  width: 6.4375rem;
+  height: 6.4375rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--color-accent);
+}
+.step-svc-card__number-bg {
+  position: absolute;
+  z-index: -1;
+  fill: var(--color-gray-800);
+  width: inherit;
+  height: inherit;
+}
+.step-svc-card__text {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+@media (width <= 100.06125rem) {
+  .step-svc-card {
+    gap: 1.5rem;
+  }
+}
+@media (width <= 63.99875rem) {
+  .step-svc-card {
+    gap: 0.625rem;
+    padding-inline: 0.625rem 0;
+  }
+  .step-svc-card__image-wrapper {
+    width: 21.25rem;
+    height: 14.25rem;
+  }
+  .step-svc-card__content {
+    padding: 0.625rem 0.625rem 0;
+    row-gap: 1.3125rem;
+    max-width: 37.5rem;
+    width: 100%;
+  }
+  .step-svc-card__number {
+    font-size: 2.875rem;
+    line-height: 1.2;
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+  .step-svc-card__text {
+    line-height: 1.23;
+  }
+}
+@media (width <= 47.99875rem) {
+  .step-svc-card {
+    flex-direction: column;
+    padding-inline: unset;
+  }
+  .step-svc-card__content {
+    padding: 1.25rem 2.5rem 3.125rem;
+    align-items: center;
+  }
+}
+@media (width <= 35.93625rem) {
+  .step-svc-card__content {
+    max-width: unset;
+    padding: 1.25rem 0.625rem 3.5625rem;
+  }
+}
+/*  =========================  */
+/*  =====END step-svc-card===  */
+/*  =========================  */
+/* Section steps-svc. decoking-engine page */
+.steps-svc {
+  margin-bottom: clamp(0.75rem, -2.6220930233rem + 13.488372093vw, 8rem);
+}
+.steps-svc__title {
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+}
+.steps-svc__slider {
+  max-width: 79.375rem;
+}
+.steps-svc__slider-wrapper {
+  position: relative;
+}
+.steps-svc__slider-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  position: absolute;
+  top: 13.75rem;
+  z-index: 2;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--color-accent);
+  transition-duration: var(--transition-duration) !important;
+  will-change: transform;
+}
+.steps-svc__slider-button::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 2.75rem;
+  height: 2.75rem;
+  content: "";
+}
+.steps-svc__slider-button--prev {
+  rotate: -180deg;
+  left: 0.125rem;
+}
+.steps-svc__slider-button--next {
+  right: -95%;
+}
+.steps-svc__slider-button-icon {
+  flex-shrink: 0;
+  stroke: var(--color-light);
+  fill: var(--color-light);
+}
+@media (any-hover: hover) {
+  .steps-svc__slider-button:hover {
+    filter: brightness(80%);
+  }
+}
+@media (any-hover: hover) and (any-hover: none) {
+  .steps-svc__slider-button:active {
+    filter: brightness(80%);
+  }
+}
+.steps-svc__slider-button:active {
+  scale: 0.95;
+}
+.steps-svc__slider-pagination {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 0.625rem;
+}
+.steps-svc__slider-pagination span {
+  width: 0.625rem;
+  height: 0.625rem;
+  background-color: var(--color-accent);
+  opacity: 0.15;
+}
+@media (any-hover: hover) {
+  .steps-svc__slider-pagination span:hover {
+    outline: 0.0625rem solid var(--color-accent);
+  }
+}
+@media (any-hover: hover) and (any-hover: none) {
+  .steps-svc__slider-pagination span:active {
+    outline: 0.0625rem solid var(--color-accent);
+  }
+}
+.steps-svc__slider-pagination span[aria-current=true] {
+  opacity: 1;
+}
+
+@media (width <= 63.99875rem) {
+  .steps-svc__slider {
+    padding-block: 0 2.5rem;
+  }
+}
+@media (width <= 47.99875rem) {
+  .steps-svc__title {
+    line-height: 1.3;
+    letter-spacing: var(--letter-spacing-medium);
+    margin-bottom: 1.25rem;
+  }
+  .steps-svc__slider {
+    padding-block: unset;
   }
 }
 /* Block-card for advantage slider( advantages__slider--h-engine ).Part of Section advantages. */
