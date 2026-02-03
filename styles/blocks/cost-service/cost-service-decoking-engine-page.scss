@@ -2,9 +2,10 @@
 @use "../../blocks/сommon-blocks/_timer-counter.scss";
 @use "prices-svc";
 
-/* Section cost-service. Styles for page decoking-engine page */
+/* Section cost-service. Styles for page decoking-engine */
 .cost-service {
   padding-block: fluid(133.5, 50) fluid(133.5, 19);
+  margin-bottom: fluid(80, 20);
   background-color: var(--color-gray-800);
 
   &__title {

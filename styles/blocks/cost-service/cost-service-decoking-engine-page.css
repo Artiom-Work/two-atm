@@ -184,9 +184,10 @@
 /*  =======================  */
 /*  =====END prices-svc====  */
 /*  =======================  */
-/* Section cost-service. Styles for page decoking-engine page */
+/* Section cost-service. Styles for page decoking-engine */
 .cost-service {
   padding-block: clamp(3.125rem, 0.6976744186rem + 9.7093023256vw, 8.34375rem) clamp(1.1875rem, -2.1409883721rem + 13.3139534884vw, 8.34375rem);
+  margin-bottom: clamp(1.25rem, -0.4941860465rem + 6.976744186vw, 5rem);
   background-color: var(--color-gray-800);
 }
 .cost-service__title {

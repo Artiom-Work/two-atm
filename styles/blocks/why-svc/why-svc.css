@@ -1,6 +1,6 @@
 /* Section why-svc. decoking-engine page */
 .why-svc {
-  --bgGradStarPercent: 37%;
+  --bgGradStarPercent: 41%;
   --whySvcSectionBgColorLight: #daf0ff;
   --whySvcSectionBgColorDark: #767676;
   background: linear-gradient(90deg, var(--whySvcSectionBgColorDark) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) var(--bgGradStarPercent), var(--whySvcSectionBgColorLight) 100%);
