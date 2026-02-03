@@ -9,8 +9,8 @@
 	<link rel="icon" type="image/svg+xml" sizes="32x32" href="./images/icons/favicon.svg">
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon.svg">
-	<!-- <meta name="description"
-		content=""> -->
+	<meta name="description"
+		content="+15% к мощности, -15% к расходу топлива! Аппаратная водородная очистка двигателя в сети 2АТМ. Устраняем причины вибрации и тяжёлого запуска. Работаем на профессиональном оборудовании.">
 	<title>2ATM | Аппаратная раскоксовка двигателя</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/pages/decoking-engine-page/decoking-engine.css">
@@ -1001,7 +1001,7 @@
 							<img class="svc-location-info__icon" src="./images/icons/icon-clock-2.webp" width="60" height="60" alt=""
 								aria-hidden="true" loading="lazy">
 
-							<time>
+							<time datetime="P1D">
 								<!--  Если контент тега "Круглосуточно" тогда трибут datetime можно не устанавливать или оставить span вместо time  -->
 								Круглосуточно
 							</time>
@@ -1027,14 +1027,13 @@
 			</h2>
 
 			<section class="cost-service__timer-counter timer-counter" aria-labelledby="timer-counter-heading">
-				<h3 class="timer-counter__heading" id="timer-counter-heading" aria-live="polite">
+				<h3 class="timer-counter__heading" id="timer-counter-heading">
 					до окончания акции
 				</h3>
 
-				<ul class="timer-counter__list" role="timer" aria-label="Время до окончания акции" aria-atomic="false"
-					aria-relevant="text">
+				<ul class="timer-counter__list" aria-label="Время до окончания акции" aria-relevant="text">
 					<li class="timer-counter__item">
-						<time class="timer-counter__unit" datetime="P30D">
+						<time class="timer-counter__unit" datetime="P30D" role="timer" aria-atomic="false">
 							<span class="timer-counter__text-big">30</span>
 							<span class="timer-counter__text-small">дней</span>
 						</time>
@@ -1042,21 +1041,21 @@
 					</li>
 
 					<li class="timer-counter__item">
-						<time class="timer-counter__unit" datetime="PT14H">
+						<time class="timer-counter__unit" datetime="PT14H" role="timer" aria-atomic="false">
 							<span class="timer-counter__text-big">14</span>
 							<span class="timer-counter__text-small">часов</span>
 						</time>
 					</li>
 
 					<li class="timer-counter__item">
-						<time class="timer-counter__unit" datetime="PT49M">
+						<time class="timer-counter__unit" datetime="PT49M" role="timer" aria-atomic="false">
 							<span class="timer-counter__text-big">49</span>
 							<span class="timer-counter__text-small">минут</span>
 						</time>
 					</li>
 
 					<li class="timer-counter__item">
-						<time class="timer-counter__unit" datetime="PT18S">
+						<time class="timer-counter__unit" datetime="PT18S" role="timer" aria-atomic="false">
 							<span class="timer-counter__text-big">18</span>
 							<span class="timer-counter__text-small">секунд</span>
 						</time>
@@ -1226,24 +1225,23 @@
 			</section>
 		</section>
 
-		<section class="about-service section section--extra-big-margin container"
-			aria-labelledby="about-service-outfit-title">
-			<h2 class="visually-hidden" id="about-service-outfit-title">
+		<section class="about-service section container" aria-labelledby="about-service-title">
+			<h2 class="visually-hidden" id="about-service-title">
 				2АТМ об оборудовании для аппаратной раскоксовке двигателей
 			</h2>
 
-			<div class="about-service__body about-service__body--outfit">
-				<div class="about-service__content about-service__content--outfit">
+			<div class="about-service__body">
+				<div class="about-service__content">
 					<h3 class="about-service__heading h4">
 						Мы&nbsp;работаем на профессиональном оборудовании премиум-класса
 					</h3>
 
 					<div class="about-service__text">
 						<p>
-							Современная установка для водородной очистки позволяет проводить процедуру управляемо
-							и&nbsp;предсказуемо&nbsp;&mdash; с&nbsp;постоянным контролем ключевых параметров. Для клиента это означает
-							безопасность, стабильное качество и&nbsp;корректный режим именно для его двигателя, а&nbsp;не «очистку
-							на&nbsp;глаз».
+							Современная установка для водородной очистки постоянно контролирует ключевые параметры. Для клиента это
+							означает безопасность, стабильное качество и&nbsp;корректный режим именно для его двигателя,
+							а&nbsp;не&nbsp;на
+							глаз».
 						</p>
 
 						<p>
@@ -1252,22 +1250,20 @@
 						</p>
 
 						<p>
-							Важный плюс&nbsp;&mdash; точная подача: фиксируется объём газа, подающегося в&nbsp;автомобиль, благодаря
-							чему режим очистки получается дозированным и&nbsp;повторяемым. Дополнительно контролируется время работы
-							установки, что позволяет выдерживать нужную длительность процедуры под конкретный объём и&nbsp;состояние
-							двигателя.
+							Важный плюс&nbsp;&mdash; точная подача: фиксируется объём газа, подающегося в&nbsp;автомобиль и&nbsp;время
+							работы установки под конкретный объём и&nbsp;состояние двигателя.
 						</p>
 					</div>
 				</div>
 
-				<picture class="about-service__image-wrapper about-service__image-wrapper--outfit">
-					<source srcset="./images/about/about-h-engine-cleaning-outfit-mobile.webp" media="(max-width: 767px)"
+				<picture class="about-service__image-wrapper">
+					<source srcset="./images/about/about-decocking-engine-mobile.webp" media="(max-width: 767px)"
 						type="image/webp">
 					<source
-						srcset="./images/about/about-h-engine-cleaning-outfit.webp 1x , ./images/about/about-h-engine-cleaning-outfit@2x.webp 2x"
+						srcset="./images/about/about-decocking-engine.webp 1x , ./images/about/about-decocking-engine@2x.webp 2x"
 						type="image/webp">
-					<img class="about-service__image" src="./images/about/about-h-engine-cleaning-outfit-mobile.webp"
-						alt="Оборудование для водородной очистки двигателя" width="340" height="365" loading="lazy">
+					<img class="about-service__image" src="./images/about/about-decocking-engine-mobile.webp"
+						alt="Оборудование для аппратной раскоксовки двигателя" width="340" height="302" loading="lazy">
 				</picture>
 			</div>
 		</section>
@@ -1872,7 +1868,7 @@
 
 	<script>
 		const stepsSvcSlider = new Swiper(".steps-svc__slider", {
-			// autoHeight: true,
+			autoHeight: true,
 			loop: true,
 			navigation: {
 				nextEl: ".steps-svc__slider-button--next",
@@ -1887,7 +1883,6 @@
 		});
 
 		const smartChoiceSlider = new Swiper(".smart-choice__slider", {
-			autoHeight: true,
 			loop: true,
 			navigation: {
 				nextEl: ".smart-choice__slider-button--next",
