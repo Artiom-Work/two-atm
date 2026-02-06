@@ -1,0 +1,138 @@
+/* Section svc-location-info. */
+.svc-location-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.625rem;
+}
+.svc-location-info__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.svc-location-info__item {
+  position: relative;
+  left: -1.875rem;
+  max-width: 19.6875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.875rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+.svc-location-info__item address {
+  font-style: normal;
+}
+.svc-location-info__icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.svc-location-info__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+.svc-location-info__button {
+  min-width: 8.75rem;
+  font-size: 1rem;
+}
+
+@media (width <= 47.99875rem) {
+  .svc-location-info {
+    gap: 0.8125rem;
+  }
+  .svc-location-info__item {
+    position: relative;
+    left: -1.875rem;
+    max-width: unset;
+  }
+}
+/*  =============================  */
+/*  =====END svc-location-info===  */
+/*  =============================  */
+/* Styles for the map. part of block locations .Current, will need to be added...*/
+.map-block {
+  position: relative;
+}
+.map-block__iframe {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.map-block__marker {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  width: clamp(1.125rem, 0.3691860465rem + 3.023255814vw, 2.75rem);
+  height: clamp(1.5rem, 0.511627907rem + 3.9534883721vw, 3.625rem);
+}
+.map-block__marker--active {
+  left: 40%;
+}
+
+/* Section svc-location. */
+.svc-location {
+  --svcLocationBgColor: var(--color-gray-25);
+  background-color: var(--svcLocationBgColor);
+  padding-block: clamp(1.25rem, -0.4941860465rem + 6.976744186vw, 5rem);
+}
+.svc-location__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+.svc-location__map-block {
+  width: 44.8125rem;
+  height: 27.1875rem;
+}
+.svc-location__info {
+  max-width: 28.9375rem;
+  width: 100%;
+}
+
+@media (width <= 47.99875rem) {
+  .svc-location__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .svc-location__map-block {
+    width: 100%;
+    height: 12.875rem;
+  }
+}
+/*  ========================  */
+/*  =====END svc-location===  */
+/*  ========================  *//*# sourceMappingURL=svc-location.css.map */

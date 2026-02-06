@@ -1,0 +1,56 @@
+/* Block-card advantage-card for advantage-gallery. Plain card , only image and text */
+.advantage-card {
+  --advantageCardTitleTextColor: var(--color-gray-800);
+  max-width: 18.5625rem;
+  width: 100%;
+  padding: 1.25rem;
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+}
+.advantage-card__image {
+  width: 3.75rem;
+  height: 3.75rem;
+  margin-bottom: 1.25rem;
+  margin-inline: auto;
+}
+.advantage-card__text {
+  font-size: 1.125rem;
+  color: var(--text-color-dark-secondary);
+  line-height: 1.47;
+}
+
+@media (width <= 47.99875rem) {
+  .advantage-card {
+    max-width: 16.875rem;
+  }
+}
+@media (width <= 35.93625rem) {
+  .advantage-card {
+    max-width: unset;
+  }
+}
+/* Section advantages-gallery.*/
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: clamp(0.625rem, 0.2180232558rem + 1.6279069767vw, 1.5rem);
+}
+.advantages__list-item {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+/*  ===========================================  */
+/*  =======END section advantages-gallery======  */
+/*  ===========================================  *//*# sourceMappingURL=advantages-gallery.css.map */

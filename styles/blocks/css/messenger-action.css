@@ -1,0 +1,56 @@
+/* Styles from section messenger-action. sourse is home page */
+.messenger-action__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  min-height: 22.25rem;
+  color: var(--text-color-light);
+  background: var(--color-grad-1);
+}
+.messenger-action__image-wrapper {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 21.8125rem;
+  height: 21.8125rem;
+}
+.messenger-action__image {
+  width: 21.8125rem;
+  height: 21.8125rem;
+}
+.messenger-action__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+  max-width: 42.0625rem;
+}
+.messenger-action__title {
+  line-height: 1.2;
+}
+.messenger-action__subtitle {
+  line-height: 1.5;
+}
+.messenger-action__button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (width <= 81.31125rem) {
+  .messenger-action__body {
+    max-width: 28.75rem;
+  }
+}
+/*  ===================================  */
+/*  ====END section messenger-action===  */
+/*  ===================================  *//*# sourceMappingURL=messenger-action.css.map */

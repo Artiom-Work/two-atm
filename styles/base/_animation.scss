@@ -21,7 +21,14 @@
     position: absolute;
   }
 }
-
+// @keyframes scale-up {
+//   0% {
+//     scale: 1;
+//   }
+//   100% {
+//     scale: 0;
+//   }
+// }
 @keyframes show-modal {
   0% {
     scale: 0.75;

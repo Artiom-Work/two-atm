@@ -10,7 +10,7 @@
 	<link rel="icon" type="image/svg+xml" sizes="48x48" href="./images/icons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicon.svg">
 	<meta name="description"
-		content="+15% к мощности, -15% к расходу топлива! Аппаратная водородная очистка двигателя в сети 2АТМ. Устраняем причины вибрации и тяжёлого запуска. Работаем на профессиональном оборудовании.">
+		content="+15% к мощности, -15% к расходу топлива! Аппаратная водородная очистка двигателя в сети 2АТМ. Устраняем причины вибрации и тяжёлого запуска. Работаем на профессиональном оборудовании бзе разборки двигателя.">
 	<title>2ATM | Аппаратная раскоксовка двигателя</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./styles/pages/decoking-engine-page/decoking-engine.css">
@@ -36,6 +36,11 @@
 					</a>
 				</li>
 				<li>
+					<a class="header-top-menu__link" href="#!">
+						Интернет-магазин
+					</a>
+				</li>
+				<li>
 					<a class="header-top-menu__link header-top-menu__link--color-green" href="./offers.html">
 						Спецпредложения
 					</a>
@@ -46,9 +51,10 @@
 		<div class="header__general header__general--not-to-scroll container">
 			<a class="header__logo logo" href="./index.html" aria-label="Логотип 2ATM">
 				<picture>
-					<source srcset="./images/logo/logo-mobile.svg" media="(max-width: 1024px)" type="image/svg+xml">
+					<source srcset="./images/logo/logo-mobile.svg" media="(max-width: 767px)" type="image/svg+xml">
+					<source srcset="./images/logo/logo-tablet.svg" media="(max-width: 1024px)" type="image/svg+xml">
 					<source srcset="./images/logo/logo.svg" type="image/svg+xml">
-					<img class="logo__image" src="./images/logo/logo-mobile.svg" width="273" height="58" alt="Логотип 2ATM">
+					<img class="logo__image" src="./images/logo/logo-mobile.svg" width="208" height="45" alt="Логотип 2ATM">
 				</picture>
 			</a>
 
@@ -79,6 +85,11 @@
 								</a>
 							</li>
 							<li>
+								<a class="header-top-menu__link" href="#!">
+									Интернет-магазин
+								</a>
+							</li>
+							<li>
 								<a class="mobile-menu__link mobile-menu__link--color-green" href="./offers.html">
 									Спецпредложения
 								</a>
@@ -89,27 +100,32 @@
 			</div>
 
 			<nav class="header__buttons">
-				<address class="call-up hidden-tablet">
-					<svg viewBox="0 0 32 32" width="32" height="32">
-						<use xlink:href="./images/icons/sprite-icons.svg#call-up"></use>
-					</svg>
-
+				<address class="call-up">
 					<a class="call-up__link" href="tel:78123855054" target="_blank" title="Позвонить нам">
-						<span>+7&nbsp;812 385-50-54</span>
-						<span class="call-up__text">круглосуточно</span>
+						<svg class="call-up__link-icon" viewBox="0 0 32 32" width="32" height="32">
+							<use xlink:href="./images/icons/sprite-icons.svg#call-up"></use>
+						</svg>
+
+						<span class="hidden-tablet">+7&nbsp;812 385-50-54</span>
+						<span class="call-up__text hidden-tablet">круглосуточно</span>
 					</a>
 				</address>
 
-				<a class="button button--accent-bg visible-tablet" href="#!">
-					Запись&nbsp;на&nbsp;сайте
+				<a class="button button--accent-bg" href="#!">
+					<span class="header__buttons-link-text hidden-mobile-medium">
+						Записаться
+					</span>
+					<span class="header__buttons-link-text visible-mobile-medium">
+						Запись&nbsp;на&nbsp;сайте
+					</span>
 				</a>
 
-				<a class="button" href="#!">
-					<span class="header-buttons__link-text hidden-tablet">
-						Записаться&nbsp;в&nbsp;Telegram
-					</span>
+				<a class="button button--light-bg-color" href="#!">
+					<svg class="header__buttons-link-icon hidden-mobile-medium" width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="./images/icons/sprite-icons.svg#telegram-transparent-icon"></use>
+					</svg>
 
-					<span class="header-buttons__link-text visible-tablet">
+					<span class="header__buttons-link-text visible-mobile-medium">
 						Запись&nbsp;в&nbsp;Telegram
 					</span>
 				</a>
@@ -118,32 +134,39 @@
 
 		<nav class="header-menu header-menu--not-to-scroll header-menu--color-accent">
 			<ul class="header-menu__list container">
-				<li class="header-menu__item">
+				<li class="header-menu__item visible-tablet">
 					<a href="./tire-fitting.html">Шиномонтаж</a>
 				</li>
+				<li class="header-menu__item hidden-tablet">
+					<a href="./car-wash.html">Мойка</a>
+				</li>
+				<!-- Шиномонтаж появляется только на меньших экранах а мойка исчезает , так в макете это не ошибка-->
 				<li class="header-menu__item">
 					<a href="./car-wash.html">Автомойка</a>
 				</li>
 				<li class="header-menu__item">
-					<a href="./car-service.html">Автосервис</a>
-				</li>
-				<li class="header-menu__item">
 					<a href="./refill-conditioning.html">Заправка кондиционеров</a>
 				</li>
-
+				<li class="header-menu__item">
+					<a href="./car-service.html">Автосервис</a>
+				</li>
+				<!-- Так же Автосервис меняется местами с кодиционерами . Это есть в стилях , тоже не ошибка -->
 				<li class="header-menu__item">
 					<a href="./wheel-alignment.html">Развал-схождение</a>
+				</li>
+				<li class="header-menu__item">
+					<a href="./decoking-engine.html">Аппаратная раскоксовка двигателя</a>
 				</li>
 			</ul>
 		</nav>
 
-		<!-- <div class="header__general header__general--to-scroll container hidden-tablet">
+		<div class="header__general header__general--to-scroll container hidden-tablet">
 			<a class="logo logo--short" href="./index.html" aria-label="Логотип 2ATM">
-				<img class="logo__image" src="./images/logo/logo-short.svg" width="45" height="45" alt="Логотип 2ATM">
+				<img class="logo__image" src="./images/logo/logo-short.svg" width="47" height="47" alt="Логотип 2ATM">
 			</a>
 
 			<nav class="header__menu header-menu">
-				<ul class="header-menu__list">
+				<ul class="header-menu__list header-menu__list--scroll-version">
 					<li class="header-menu__item">
 						<a href="./tire-fitting.html">Шиномонтаж</a>
 					</li>
@@ -159,12 +182,33 @@
 				</ul>
 			</nav>
 
-			<a class="button" href="#!">
-				<span class="header-buttons__link-text">
+			<!-- <a class="button" href="#!">
+				<span class="header__buttons-link-text">
 					Запись&nbsp;в&nbsp;Telegram
 				</span>
-			</a>
-		</div> -->
+			</a> -->
+
+			<nav class="header__buttons">
+				<a class="button button--accent-bg" href="#!">
+					<span class="header__buttons-link-text hidden-mobile-medium">
+						Записаться
+					</span>
+					<span class="header__buttons-link-text visible-mobile-medium">
+						Запись&nbsp;на&nbsp;сайте
+					</span>
+				</a>
+
+				<a class="button button--light-bg-color" href="#!">
+					<svg class="header__buttons-link-icon hidden-mobile-medium" width="24" height="24" viewBox="0 0 24 24">
+						<use xlink:href="./images/icons/sprite-icons.svg#telegram-transparent-icon"></use>
+					</svg>
+
+					<span class="header__buttons-link-text visible-mobile-medium">
+						Запись&nbsp;в&nbsp;Telegram
+					</span>
+				</a>
+			</nav>
+		</div>
 	</header>
 
 	<main class="content">

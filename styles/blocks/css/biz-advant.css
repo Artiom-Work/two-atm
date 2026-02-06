@@ -1,0 +1,183 @@
+/* Section advantages-banner. */
+.advantages-banner {
+  --advantagesBannerBgColor: var(--color-gray-25);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: clamp(1.6875rem, 1.3095930233rem + 1.511627907vw, 2.5rem);
+  background-color: var(--advantagesBannerBgColor);
+  border-radius: 1.25rem;
+  padding: clamp(1.25rem, -0.3197674419rem + 6.2790697674vw, 4.625rem) clamp(1.25rem, 0.6686046512rem + 2.3255813953vw, 2.5rem);
+}
+.advantages-banner__title {
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.2;
+}
+.advantages-banner__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.advantages-banner__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.25rem;
+  padding-block: 1.25rem;
+}
+.advantages-banner__item-icon {
+  width: 3.75rem;
+  height: 3.75rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.advantages-banner__item-name {
+  font-size: clamp(0.9375rem, 0.8502906977rem + 0.3488372093vw, 1.125rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-align: center;
+  min-width: 9.375rem;
+}
+
+@media (width <= 47.99875rem) {
+  .advantages-banner__title {
+    line-height: 1.3;
+  }
+  .advantages-banner__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .advantages-banner__item {
+    padding-inline: 1.25rem;
+    padding-block: 0.625rem;
+  }
+  .advantages-banner__item-name {
+    line-height: 1.2;
+    min-width: unset;
+    max-width: 9.6875rem;
+  }
+}
+@media (width <= 35.93625rem) {
+  .advantages-banner {
+    padding: 1.25rem 1.25rem 1.75rem;
+  }
+}
+/*  =============================  */
+/*  =====END advantages-banner===  */
+/*  =============================  */
+/* Section biz-advant. */
+.biz-advant {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+  padding-block: clamp(2.5rem, 1.3372093023rem + 4.6511627907vw, 5rem) 0;
+}
+.biz-advant__desc {
+  max-width: 37.5rem;
+  padding-block: 2.5rem;
+}
+.biz-advant__desc-logo {
+  margin-bottom: clamp(1.25rem, 0.6686046512rem + 2.3255813953vw, 2.5rem);
+  width: 20.625rem;
+  height: 4.375rem;
+}
+.biz-advant__desc-logo-image {
+  width: inherit;
+  height: inherit;
+}
+@media (any-hover: hover) {
+  .biz-advant__desc-logo:hover {
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
+  }
+}
+@media (any-hover: hover) and (any-hover: none) {
+  .biz-advant__desc-logo:active {
+    -webkit-filter: opacity(50%);
+            filter: opacity(50%);
+  }
+}
+.biz-advant__desc-logo:active {
+  -webkit-filter: opacity(30%);
+          filter: opacity(30%);
+  scale: 0.98;
+}
+.biz-advant__desc-text {
+  color: var(--text-color-dark-secondary);
+  line-height: 1.5;
+}
+.biz-advant__desc-text p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.biz-advant__banner {
+  max-width: 37.5rem;
+}
+
+@media (width <= 81.31125rem) {
+  .biz-advant {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .biz-advant__desc {
+    max-width: unset;
+  }
+  .biz-advant__desc-logo {
+    display: block;
+    margin-inline: auto;
+  }
+}
+@media (width <= 47.99875rem) {
+  .biz-advant {
+    padding-block: unset;
+  }
+  .biz-advant__desc {
+    padding-block: 2.5rem 0;
+  }
+  .biz-advant__desc-text p:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (width <= 35.93625rem) {
+  .biz-advant__desc-logo {
+    margin-inline: unset;
+  }
+  .biz-advant__banner {
+    max-width: 25rem;
+  }
+}
+/*  ======================  */
+/*  =====END biz-advant===  */
+/*  ======================  *//*# sourceMappingURL=biz-advant.css.map */

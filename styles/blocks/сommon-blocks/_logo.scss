@@ -5,10 +5,11 @@
   height: rem(70);
 
   &--short {
+    @include square(rem(47));
+
     flex-shrink: 0;
-    width: rem(45);
-    height: rem(45);
   }
+
   @include hover {
     filter: opacity(50%);
   }

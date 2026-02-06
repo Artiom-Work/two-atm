@@ -1,0 +1,88 @@
+/* Section contacts. Block with contact info cards . sourse contacts page */
+.contacts {
+  --contactsCardColorBg: var(--color-accent-200);
+}
+.contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: clamp(0.625rem, 0.2180232558rem + 1.6279069767vw, 1.5rem);
+}
+.contacts__list-item {
+  max-width: 18.5625rem;
+  width: 100%;
+}
+.contacts__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1.25rem;
+  background-color: var(--contactsCardColorBg);
+  border-radius: var(--border-radius-small);
+  padding: 1.25rem 1.25rem 0.3125rem;
+  width: 100%;
+  min-height: 19rem;
+  height: 100%;
+}
+.contacts__card-image {
+  width: 3.75rem;
+  height: 3.75rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.contacts__card-name {
+  font-size: 1.125rem;
+  text-align: center;
+  text-transform: uppercase;
+  min-height: 4.125rem;
+}
+.contacts__card-info {
+  padding-left: 0;
+}
+.contacts__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  min-height: 1.9375rem;
+}
+.contacts__card-item:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.contacts__card-icon {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: transparent;
+}
+.contacts__card-text {
+  line-height: 1.4;
+  font-weight: 600;
+  color: var(--text-color-dark-secondary);
+}
+.contacts address {
+  font-style: normal;
+}
+.contacts a {
+  -webkit-transition-duration: var(--transition-duration) !important;
+          transition-duration: var(--transition-duration) !important;
+}
+
+/*  ==================================  */
+/*  =======END section contacts=======  */
+/*  ==================================  *//*# sourceMappingURL=contacts-block.css.map */

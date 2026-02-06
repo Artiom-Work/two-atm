@@ -1,0 +1,191 @@
+/* Section appointment-choose */
+.appointment-choose__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-gray-800);
+  width: 100%;
+  min-height: 8.625rem;
+  padding-block: 0.625rem;
+  padding-inline: 10.4375rem;
+  border-radius: var(--border-radius-small);
+}
+.appointment-choose__title {
+  color: var(--text-color-light);
+  font-size: clamp(1.25rem, 1.0174418605rem + 0.9302325581vw, 1.75rem);
+  line-height: 1.35;
+  margin-right: 4.375rem;
+}
+.appointment-choose__image {
+  width: 5.375rem;
+  height: 6.75rem;
+}
+.appointment-choose__image-wrapper {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  width: 5.375rem;
+  height: 7.375rem;
+  margin-right: 1.375rem;
+}
+.appointment-choose__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.25rem;
+}
+.appointment-choose__button {
+  min-width: 8.75rem;
+}
+
+@media (width <= 100.06125rem) {
+  .appointment-choose__wrapper {
+    padding-inline: 1.25rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1.5rem;
+  }
+  .appointment-choose__image-wrapper {
+    margin-right: 0;
+  }
+  .appointment-choose__title {
+    margin-right: 0;
+  }
+}
+@media (width <= 63.99875rem) {
+  .appointment-choose__wrapper {
+    padding-block: 1.875rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 34.375rem;
+    margin-inline: auto;
+    gap: 2.125rem;
+  }
+  .appointment-choose__title {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 15.625rem;
+    text-transform: uppercase;
+  }
+  .appointment-choose__image-wrapper {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .appointment-choose__buttons {
+    max-width: 18.75rem;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    gap: 0.625rem;
+  }
+}
+@media (width <= 35.93625rem) {
+  .appointment-choose__wrapper {
+    padding-inline: 1rem;
+  }
+  .appointment-choose__buttons {
+    max-width: unset;
+  }
+}
+/*  ===================================  */
+/*  ======END appointment-choose=======  */
+/*  ===================================  */
+/* Section join-loyalty. loyalty page  */
+.join-loyalty {
+  --joinLoyaltyCardColorBg: var(--color-gray-25);
+  margin-bottom: clamp(2.5rem, -1.2790697674rem + 15.1162790698vw, 10.625rem);
+}
+.join-loyalty__title {
+  margin-bottom: clamp(1.25rem, 0.6686046512rem + 2.3255813953vw, 2.5rem);
+  text-align: center;
+  line-height: 1.2;
+  letter-spacing: var(--letter-spacing);
+}
+.join-loyalty__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.625rem, 0.2180232558rem + 1.6279069767vw, 1.5rem);
+  margin-bottom: clamp(1.25rem, 0.6686046512rem + 2.3255813953vw, 2.5rem);
+}
+.join-loyalty__card {
+  background-color: var(--joinLoyaltyCardColorBg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem);
+  border: var(--border-light);
+  border-radius: var(--border-radius-small);
+  padding: clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem) clamp(0.625rem, 0.3343023256rem + 1.1627906977vw, 1.25rem) clamp(0.625rem, 0.1889534884rem + 1.7441860465vw, 1.5625rem);
+}
+.join-loyalty__card-image {
+  width: 3.75rem;
+  height: 3.75rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.join-loyalty__card-name {
+  text-align: center;
+  letter-spacing: var(--letter-spacing);
+  line-height: 1.3;
+}
+.join-loyalty__text {
+  max-width: 52rem;
+  margin-inline: auto;
+  margin-bottom: clamp(1.25rem, 0.6686046512rem + 2.3255813953vw, 2.5rem);
+  width: 100%;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+@media (width <= 63.99875rem) {
+  .join-loyalty__list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .join-loyalty__card {
+    max-width: 29.375rem;
+    width: 100%;
+    justify-self: center;
+  }
+  .join-loyalty__card:last-child {
+    grid-column: 1/3;
+  }
+}
+@media (width <= 35.93625rem) {
+  .join-loyalty__list {
+    grid-template-columns: 1fr;
+  }
+  .join-loyalty__card:last-child {
+    grid-column: 1/2;
+  }
+}
+/*  ==========================  */
+/*  =====END join-loyalty=====  */
+/*  ==========================  *//*# sourceMappingURL=join-loyalty.css.map */
