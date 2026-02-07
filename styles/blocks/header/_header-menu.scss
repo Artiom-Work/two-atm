@@ -5,11 +5,12 @@
   width: 100%;
 
   &--not-to-scroll {
-    /* Временно , заменить на display none , через JS */
+    /* Можно, заменить на JS анимацию  */
     animation-name: hidden-to-scroll;
     animation-fill-mode: both;
     animation-timeline: scroll();
     animation-range: rem(400) rem(400);
+    animation-timing-function: linear;
   }
 
   &--color-accent {
@@ -76,7 +77,7 @@
 @include mobile-media {
   .header-menu {
     &--not-to-scroll {
-      /* Временно , заменить на display none , через JS */
+      /* Можно, заменить на JS анимацию  */
       animation-range: rem(50) rem(50);
     }
 

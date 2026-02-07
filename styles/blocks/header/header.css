@@ -44,11 +44,12 @@
   width: 100%;
 }
 .header-menu--not-to-scroll {
-  /* Временно , заменить на display none , через JS */
+  /* Можно, заменить на JS анимацию  */
   animation-name: hidden-to-scroll;
   animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: 25rem 25rem;
+  animation-timing-function: linear;
 }
 .header-menu--color-accent {
   background-color: var(--color-accent-200);
@@ -105,7 +106,7 @@
 }
 @media (width <= 47.99875rem) {
   .header-menu--not-to-scroll {
-    /* Временно , заменить на display none , через JS */
+    /* Можно, заменить на JS анимацию  */
     animation-range: 3.125rem 3.125rem;
   }
   .header-menu__list {
@@ -123,7 +124,7 @@
   color: var(--mobileMenuTextColor);
   font-weight: 600;
   font-size: 0.875rem;
-  /* Временно , заменить на display none , через JS */
+  /* Можно, заменить на JS анимацию  */
   animation-name: hidden-to-scroll;
   animation-fill-mode: both;
   animation-timeline: scroll();

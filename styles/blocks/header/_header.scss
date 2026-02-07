@@ -20,12 +20,13 @@
 
     width: rem(330);
     height: rem(70);
-
-    // transform-origin: left;
-    // animation-name: scale-up;
-    // animation-fill-mode: forwards;
-    // animation-timeline: scroll();
-    // animation-range: rem(400) rem(400);
+    /* Можно, заменить на JS анимацию  */
+    transform-origin: left;
+    animation-name: scale-up;
+    animation-fill-mode: forwards;
+    animation-timeline: scroll();
+    animation-range: rem(370) rem(400);
+    animation-timing-function: linear;
   }
 
   &__general {
@@ -35,7 +36,7 @@
     padding-block: fluid(11, 8) rem(13);
 
     &--to-scroll {
-      /* Временно , заменить на display none , через JS */
+      /* Можно, заменить на JS анимацию  */
       position: absolute;
       translate: 0 rem(-1000);
       height: rem(1);
@@ -45,8 +46,21 @@
       animation-fill-mode: both;
       animation-timeline: scroll();
       animation-range: rem(400) rem(400);
+      animation-timing-function: linear;
 
       padding-block: rem(4.5);
+
+      .logo,
+      .header-menu,
+      .header__buttons {
+        /* Можно, заменить на JS анимацию  */
+        transform-origin: right;
+        animation-name: scale-off;
+        animation-fill-mode: forwards;
+        animation-timeline: scroll();
+        animation-range: rem(370) rem(440);
+        animation-timing-function: linear;
+      }
     }
   }
 
@@ -89,22 +103,12 @@
 @include tablet-media-above {
   .header {
     &__general--not-to-scroll {
-      /* Временно , заменить на display block , через JS */
+      /* Можно, заменить на JS анимацию  */
       animation-name: hidden-to-scroll;
       animation-fill-mode: both;
       animation-timeline: scroll();
       animation-range: rem(400) rem(400);
-
-      .header__logo {
-        // scale: 1;
-
-        // animation-name: scale-up;
-        // transition-delay: 0.3s;
-        // transition-duration: 0.3s;
-        // animation-fill-mode: both;
-        // animation-timeline: scroll();
-        // animation-range: rem(400) rem(400);
-      }
+      animation-timing-function: linear;
     }
   }
 }
@@ -123,6 +127,7 @@
       grid-area: logo;
       width: rem(273);
       height: rem(58);
+      animation: unset;
     }
 
     &__general {

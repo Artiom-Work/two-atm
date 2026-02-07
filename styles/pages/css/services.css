@@ -544,6 +544,38 @@ button[aria-label]:not(.promotion__card-link)::before {
     position: absolute;
   }
 }
+@-webkit-keyframes scale-up {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+@keyframes scale-up {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 0;
+  }
+}
+@-webkit-keyframes scale-off {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes scale-off {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
 @-webkit-keyframes show-modal {
   0% {
     scale: 0.75;
@@ -820,13 +852,15 @@ button[aria-label]:not(.promotion__card-link)::before {
   width: 100%;
 }
 .header-menu--not-to-scroll {
-  /* Временно , заменить на display none , через JS */
+  /* Можно, заменить на JS анимацию  */
   -webkit-animation-name: hidden-to-scroll;
           animation-name: hidden-to-scroll;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: 25rem 25rem;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .header-menu--color-accent {
   background-color: var(--color-accent-200);
@@ -904,7 +938,7 @@ button[aria-label]:not(.promotion__card-link)::before {
 }
 @media (width <= 47.99875rem) {
   .header-menu--not-to-scroll {
-    /* Временно , заменить на display none , через JS */
+    /* Можно, заменить на JS анимацию  */
     animation-range: 3.125rem 3.125rem;
   }
   .header-menu__list {
@@ -922,7 +956,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   color: var(--mobileMenuTextColor);
   font-weight: 600;
   font-size: 0.875rem;
-  /* Временно , заменить на display none , через JS */
+  /* Можно, заменить на JS анимацию  */
   -webkit-animation-name: hidden-to-scroll;
           animation-name: hidden-to-scroll;
   -webkit-animation-fill-mode: both;
@@ -1083,6 +1117,17 @@ button[aria-label]:not(.promotion__card-link)::before {
           align-items: center;
   width: 20.625rem;
   height: 4.375rem;
+  /* Можно, заменить на JS анимацию  */
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-animation-name: scale-up;
+          animation-name: scale-up;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-timeline: scroll();
+  animation-range: 23.125rem 25rem;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .header__general {
   display: -webkit-box;
@@ -1100,7 +1145,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   padding-block: clamp(0.5rem, 0.4127906977rem + 0.3488372093vw, 0.6875rem) 0.8125rem;
 }
 .header__general--to-scroll {
-  /* Временно , заменить на display none , через JS */
+  /* Можно, заменить на JS анимацию  */
   position: absolute;
   translate: 0 -62.5rem;
   height: 0.0625rem;
@@ -1111,7 +1156,24 @@ button[aria-label]:not(.promotion__card-link)::before {
           animation-fill-mode: both;
   animation-timeline: scroll();
   animation-range: 25rem 25rem;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
   padding-block: 0.28125rem;
+}
+.header__general--to-scroll .logo,
+.header__general--to-scroll .header-menu,
+.header__general--to-scroll .header__buttons {
+  /* Можно, заменить на JS анимацию  */
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-animation-name: scale-off;
+          animation-name: scale-off;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  animation-timeline: scroll();
+  animation-range: 23.125rem 27.5rem;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
 }
 .header__buttons {
   display: -webkit-box;
@@ -1148,13 +1210,15 @@ button[aria-label]:not(.promotion__card-link)::before {
 }
 @media (width > 63.99875rem) {
   .header__general--not-to-scroll {
-    /* Временно , заменить на display block , через JS */
+    /* Можно, заменить на JS анимацию  */
     -webkit-animation-name: hidden-to-scroll;
             animation-name: hidden-to-scroll;
     -webkit-animation-fill-mode: both;
             animation-fill-mode: both;
     animation-timeline: scroll();
     animation-range: 25rem 25rem;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
   }
 }
 @media (width <= 81.31125rem) {
@@ -1169,6 +1233,8 @@ button[aria-label]:not(.promotion__card-link)::before {
     grid-area: logo;
     width: 17.0625rem;
     height: 3.625rem;
+    -webkit-animation: unset;
+            animation: unset;
   }
   .header__general {
     display: grid;
