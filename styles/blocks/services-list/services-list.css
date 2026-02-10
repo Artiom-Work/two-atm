@@ -44,7 +44,7 @@
   left: -1.25rem;
   top: 45%;
   translate: 0 -45%;
-  background-color: var(--text-color-medium);
+  background-color: var(--text-color-dark-medium);
   border-radius: 50%;
 }
 .services-list__link::after {

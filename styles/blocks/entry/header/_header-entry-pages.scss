@@ -1,0 +1,34 @@
+@use "../../../healpers" as *;
+
+/* Styles from block header( entry pages ) */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation-name: scrolling-sticky;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: rem(200) rem(300);
+
+  background-color: var(--color-light);
+
+  &__content {
+    @include flex-space-between;
+
+    column-gap: rem(24);
+    padding-block: rem(5);
+  }
+}
+@include mobile-medium-media {
+  .header {
+    &__logo {
+      width: rem(42);
+      height: rem(43);
+      margin-left: rem(3);
+    }
+
+    &__content {
+      padding-block: rem(3);
+    }
+  }
+}

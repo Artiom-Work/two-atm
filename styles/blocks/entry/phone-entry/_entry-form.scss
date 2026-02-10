@@ -1,0 +1,140 @@
+@use "../../../healpers" as *;
+/* Styles from section entry-form */
+.entry-form {
+  --radioButtonBorderColor: #dadada;
+  --radioButtonBorderColorChecked: var(--color-accent-dark);
+  --radioButtonBgColorDisabled: #dadada;
+  --radioButtonTextColorDisabled: var(--color-gray-500);
+
+  display: flex;
+  flex-direction: column;
+  row-gap: rem(20);
+
+  &__field {
+    &-label {
+      font-weight: 600;
+      font-size: rem(16);
+      line-height: 1.2;
+      color: var(--color-gray-500);
+    }
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__ratio {
+    &-text {
+      font-size: rem(14);
+      line-height: 1.4;
+      margin-bottom: rem(20);
+    }
+
+    &-body {
+      display: flex;
+      gap: rem(10);
+    }
+
+    &-field {
+      width: 100%;
+
+      input:checked {
+        & ~ .entry-form__ratio-button {
+          box-shadow: 0 0 0 rem(1) var(--radioButtonBorderColorChecked);
+        }
+      }
+
+      input:disabled {
+        & ~ .entry-form__ratio-button {
+          background-color: var(--radioButtonBgColorDisabled);
+          color: var(--radioButtonTextColorDisabled);
+          pointer-events: none;
+        }
+      }
+    }
+
+    &-button {
+      @include flex-center(true);
+
+      min-height: var(--button-height-big);
+      width: 100%;
+      box-shadow: 0 0 0 rem(1) var(--radioButtonBorderColor);
+      border-radius: rem(10);
+      background-color: var(--color-light);
+      font-weight: 700;
+      font-size: rem(16);
+      line-height: 1.5;
+      letter-spacing: var(--letter-spacing);
+      color: var(--color-accent-dark);
+      will-change: transform;
+
+      @include hover {
+        box-shadow: 0 0 0 rem(1) var(--radioButtonBorderColorChecked);
+        scale: 1.01;
+      }
+
+      @include active {
+        filter: brightness(99%);
+        will-change: transform;
+        scale: 0.99;
+      }
+    }
+
+    &:has(input[id="sms-code"]:checked) {
+      & ~ button[data-get-user-code-button] {
+        display: block;
+      }
+    }
+
+    &:has(input[id="call-code"]:checked) {
+      & ~ button[data-get-user-call-back-button] {
+        display: block;
+      }
+    }
+  }
+
+  &__text {
+    font-size: rem(14);
+    line-height: 1.4;
+    color: var(--text-color-dark-secondary);
+  }
+
+  &__button {
+    display: none;
+
+    min-height: var(--button-height-big);
+
+    &:disabled {
+      background-color: var(--color-gray-350);
+      color: var(--color-gray-500);
+      pointer-events: none;
+    }
+  }
+}
+
+@include mobile-medium-media {
+  .entry-form {
+    row-gap: rem(10);
+
+    &__field {
+      margin-bottom: rem(10);
+    }
+
+    &__input {
+      margin-bottom: rem(2);
+    }
+
+    &__ratio {
+      &-text {
+        margin-bottom: rem(11);
+      }
+    }
+
+    &__text {
+      margin-bottom: rem(45);
+    }
+  }
+}
+/*  ============================== */
+/*  ========END entry-form======== */
+/*  ============================== */

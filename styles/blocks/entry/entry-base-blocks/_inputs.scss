@@ -1,0 +1,55 @@
+@use "../../../healpers" as *;
+
+.input {
+  --inputBorderColorDefault: #dadada;
+  --inputBorderColorFocus: var(--color-accent);
+  --inputBorderColorError: var(--color-error);
+  --inputBorderColorFiled: var(--text-color-dark);
+  --inputTextColorPlaceholder: var(--color-gray-500);
+  --inputTextColorDisabled: var(--color-gray-500);
+  --inputTextColorFiled: var(--text-color-dark);
+  --inputBgColorDisabled: var(--color-gray-350);
+  --inputBgColorDisabled: #dadada;
+  --inputTextColorError: var(--color-error);
+
+  font-size: rem(16);
+  line-height: 1.5;
+  min-height: rem(46);
+  padding: rem(11) rem(12);
+  border-radius: var(--border-radius-extra-small);
+  background-color: var(--color-light);
+  border: none;
+  outline: none;
+  box-shadow: 0 0 0 rem(1) var(--inputBorderColorDefault);
+
+  &::placeholder {
+    color: var(--inputTextColorPlaceholder);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 rem(1) var(--inputBorderColorFocus);
+  }
+
+  &.error {
+    // Селектор .error для кастомной валидации полей через JS
+    color: var(--inputTextColorError);
+
+    &:focus {
+      box-shadow: 0 0 0 rem(1) var(--inputBorderColorError);
+    }
+  }
+
+  &:disabled {
+    color: var(--inputTextColorDisabled);
+    background-color: var(--inputBgColorDisabled);
+  }
+
+  &:not(:placeholder-shown) {
+    box-shadow: 0 0 0 rem(1) var(--inputBorderColorFiled);
+    color: var(--inputTextColorFiled);
+
+    &:focus {
+      box-shadow: 0 0 0 rem(1) var(--inputBorderColorFocus);
+    }
+  }
+}

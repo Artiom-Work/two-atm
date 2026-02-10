@@ -1,0 +1,34 @@
+/* Styles from block header( entry pages ) */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  animation-name: scrolling-sticky;
+  animation-fill-mode: both;
+  animation-timeline: scroll();
+  animation-range: 12.5rem 18.75rem;
+  background-color: var(--color-light);
+}
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.5rem;
+  padding-block: 0.3125rem;
+}
+
+@media (width <= 35.93625rem) {
+  .header__logo {
+    width: 2.625rem;
+    height: 2.6875rem;
+    margin-left: 0.1875rem;
+  }
+  .header__content {
+    padding-block: 0.1875rem;
+  }
+}
+/*  ==============================  */
+/*  =========END header===========  */
+/*  ==============================  */
+
+/*# sourceMappingURL=header-entry-pages.css.map */

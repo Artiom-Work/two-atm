@@ -225,9 +225,10 @@ svg * {
   --text-color-light: var(--color-gray-50);
   --text-color-dark: var(--color-gray-900);
   --text-color-dark-secondary: var(--color-gray-700);
-  --text-color-medium: var(--color-gray-500);
+  --text-color-dark-medium: var(--color-gray-500);
   --color-accent-extra-light: var(--color-accent-50);
   --color-accent: var(--color-accent-500);
+  --color-accent-dark: var(--color-accent-600);
   --color-error: var(--color-red);
   --color-success: var(--color-green);
   --color-rating-star: var(--color-gray-350);
@@ -247,6 +248,7 @@ svg * {
   --letter-spacing: 0.01em;
   --letter-spacing-medium: 0.02em;
   --letter-spacing-big: 0.04em;
+  --container-width-medium: 53.9375rem;
   --container-width: 78.75rem;
   --container-width-big: 120rem;
   --container-padding-x: 1.25rem;
@@ -289,6 +291,10 @@ svg * {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
+}
+.container--medium {
+  max-width: calc(var(--container-width-medium) + 1.25rem * 2);
+  padding-inline: 1.25rem;
 }
 
 .visually-hidden {
@@ -591,7 +597,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   font-size: 0.8125rem;
   line-height: 1.69;
   background-color: var(--color-light);
-  color: var(--text-color-medium);
+  color: var(--text-color-dark-medium);
   border: 0.0625rem solid currentColor;
 }
 .button--light-accent {
@@ -622,6 +628,10 @@ button[aria-label]:not(.promotion__card-link)::before {
 .logo {
   width: 20.625rem;
   height: 4.375rem;
+}
+.logo--medium {
+  width: 14.75rem;
+  height: 3.125rem;
 }
 .logo--short {
   width: 2.9375rem;
@@ -738,7 +748,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   font-weight: 400;
   letter-spacing: 0.07em;
   text-align: center;
-  color: var(--text-color-medium);
+  color: var(--text-color-dark-medium);
 }
 
 @media (width <= 63.99875rem) {
@@ -2014,7 +2024,7 @@ button[aria-label]:not(.promotion__card-link)::before {
   left: -1.25rem;
   top: 45%;
   translate: 0 -45%;
-  background-color: var(--text-color-medium);
+  background-color: var(--text-color-dark-medium);
   border-radius: 50%;
 }
 .services-list__link::after {

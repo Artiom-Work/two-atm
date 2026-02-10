@@ -69,7 +69,7 @@
   text-transform: none;
 }
 .cost-service-table thead {
-  color: var(--text-color-medium);
+  color: var(--text-color-dark-medium);
 }
 .cost-service-table th,
 .cost-service-table td {

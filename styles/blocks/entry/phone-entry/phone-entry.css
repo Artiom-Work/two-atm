@@ -1,0 +1,156 @@
+/* Styles from section entry-form */
+.entry-form {
+  --radioButtonBorderColor: #dadada;
+  --radioButtonBorderColorChecked: var(--color-accent-dark);
+  --radioButtonBgColorDisabled: #dadada;
+  --radioButtonTextColorDisabled: var(--color-gray-500);
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.25rem;
+}
+.entry-form__field-label {
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.2;
+  color: var(--color-gray-500);
+}
+.entry-form__input {
+  width: 100%;
+}
+.entry-form__ratio-text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 1.25rem;
+}
+.entry-form__ratio-body {
+  display: flex;
+  gap: 0.625rem;
+}
+.entry-form__ratio-field {
+  width: 100%;
+}
+.entry-form__ratio-field input:checked ~ .entry-form__ratio-button {
+  box-shadow: 0 0 0 0.0625rem var(--radioButtonBorderColorChecked);
+}
+.entry-form__ratio-field input:disabled ~ .entry-form__ratio-button {
+  background-color: var(--radioButtonBgColorDisabled);
+  color: var(--radioButtonTextColorDisabled);
+  pointer-events: none;
+}
+.entry-form__ratio-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-height: var(--button-height-big);
+  width: 100%;
+  box-shadow: 0 0 0 0.0625rem var(--radioButtonBorderColor);
+  border-radius: 0.625rem;
+  background-color: var(--color-light);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-accent-dark);
+  will-change: transform;
+}
+@media (any-hover: hover) {
+  .entry-form__ratio-button:hover {
+    box-shadow: 0 0 0 0.0625rem var(--radioButtonBorderColorChecked);
+    scale: 1.01;
+  }
+}
+@media (any-hover: hover) and (any-hover: none) {
+  .entry-form__ratio-button:active {
+    box-shadow: 0 0 0 0.0625rem var(--radioButtonBorderColorChecked);
+    scale: 1.01;
+  }
+}
+.entry-form__ratio-button:active {
+  filter: brightness(99%);
+  will-change: transform;
+  scale: 0.99;
+}
+.entry-form__ratio:has(input[id=sms-code]:checked) ~ button[data-get-user-code-button] {
+  display: block;
+}
+.entry-form__ratio:has(input[id=call-code]:checked) ~ button[data-get-user-call-back-button] {
+  display: block;
+}
+.entry-form__text {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: var(--text-color-dark-secondary);
+}
+.entry-form__button {
+  display: none;
+  min-height: var(--button-height-big);
+}
+.entry-form__button:disabled {
+  background-color: var(--color-gray-350);
+  color: var(--color-gray-500);
+  pointer-events: none;
+}
+
+@media (width <= 35.93625rem) {
+  .entry-form {
+    row-gap: 0.625rem;
+  }
+  .entry-form__field {
+    margin-bottom: 0.625rem;
+  }
+  .entry-form__input {
+    margin-bottom: 0.125rem;
+  }
+  .entry-form__ratio-text {
+    margin-bottom: 0.6875rem;
+  }
+  .entry-form__text {
+    margin-bottom: 2.8125rem;
+  }
+}
+/*  ============================== */
+/*  ========END entry-form======== */
+/*  ============================== */
+/* Styles from section phone-entry. (first page)*/
+.phone-entry {
+  max-width: var(--container-width-medium);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+  background-color: var(--color-gray-25);
+  border-radius: var(--border-radius-small);
+  padding-block: 1.25rem;
+}
+.phone-entry__title {
+  font-size: clamp(1rem, 0.9418604651rem + 0.2325581395vw, 1.125rem);
+  font-weight: 600;
+  line-height: 1.89;
+  margin-bottom: 1.25rem;
+}
+.phone-entry__subtitle {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  margin-bottom: 1.375rem;
+}
+.phone-entry__subtitle :last-child {
+  font-weight: 600;
+}
+
+@media (width <= 35.93625rem) {
+  .phone-entry__title {
+    line-height: 1.876;
+    text-align: center;
+  }
+  .phone-entry__subtitle {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1.25rem;
+  }
+  .phone-entry__subtitle p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+/*  ===============================  */
+/*  ========END phone-entry========  */
+/*  ===============================  */
+
+/*# sourceMappingURL=phone-entry.css.map */

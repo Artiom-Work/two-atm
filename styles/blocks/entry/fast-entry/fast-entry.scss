@@ -1,0 +1,75 @@
+@use "../../../healpers" as *;
+/* Styles from section fast-entry */
+.fast-entry {
+  max-width: rem(517);
+  margin-inline: auto;
+  padding: rem(10);
+  margin-bottom: rem(10);
+
+  display: grid;
+  grid-template: auto auto / auto 1fr;
+  gap: rem(10);
+
+  &__image {
+    grid-row: 1 / 3;
+    justify-self: center;
+    align-self: center;
+  }
+
+  &__text {
+    @include fluid-text(16, 14);
+
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--text-color-dark-medium);
+    max-width: rem(349);
+  }
+
+  &__button {
+    @include flex-center;
+
+    column-gap: rem(10);
+    min-height: rem(40);
+    padding-block: rem(8);
+    border-radius: rem(5);
+    justify-self: start;
+    padding-inline: rem(31.5);
+    font-size: rem(16);
+    white-space: nowrap;
+
+    &-icon {
+      @include square(rem(24));
+
+      flex-shrink: 0;
+      stroke: transparent;
+      fill: var(--color-light);
+    }
+  }
+}
+@include mobile-media {
+  .fast-entry {
+    max-width: rem(500);
+  }
+}
+
+@include mobile-medium-media {
+  .fast-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: rem(20);
+
+    &__text {
+      line-height: 1.47;
+      max-width: unset;
+    }
+
+    &__button {
+      max-width: rem(370);
+    }
+  }
+}
+/*  ==============================  */
+/*  ========END fast-entry========  */
+/*  ==============================  */

@@ -1,0 +1,69 @@
+/* Styles from section fast-entry */
+.fast-entry {
+  max-width: 32.3125rem;
+  margin-inline: auto;
+  padding: 0.625rem;
+  margin-bottom: 0.625rem;
+  display: grid;
+  grid-template: auto auto/auto 1fr;
+  gap: 0.625rem;
+}
+.fast-entry__image {
+  grid-row: 1/3;
+  justify-self: center;
+  align-self: center;
+}
+.fast-entry__text {
+  font-size: clamp(0.875rem, 0.8168604651rem + 0.2325581395vw, 1rem);
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--text-color-dark-medium);
+  max-width: 21.8125rem;
+}
+.fast-entry__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.625rem;
+  min-height: 2.5rem;
+  padding-block: 0.5rem;
+  border-radius: 0.3125rem;
+  justify-self: start;
+  padding-inline: 1.96875rem;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+.fast-entry__button-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  stroke: transparent;
+  fill: var(--color-light);
+}
+
+@media (width <= 47.99875rem) {
+  .fast-entry {
+    max-width: 31.25rem;
+  }
+}
+@media (width <= 35.93625rem) {
+  .fast-entry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 1.25rem;
+  }
+  .fast-entry__text {
+    line-height: 1.47;
+    max-width: unset;
+  }
+  .fast-entry__button {
+    max-width: 23.125rem;
+  }
+}
+/*  ==============================  */
+/*  ========END fast-entry========  */
+/*  ==============================  */
+
+/*# sourceMappingURL=fast-entry.css.map */

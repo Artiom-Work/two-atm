@@ -4,6 +4,11 @@
   width: rem(330);
   height: rem(70);
 
+  &--medium {
+    width: rem(236);
+    height: rem(50);
+  }
+
   &--short {
     @include square(rem(47));
 
